@@ -77465,7 +77465,7 @@ class AddEquipmentComponent {
     if (this.edit) {
       this.device = JSON.parse(this.activatedRoute.snapshot.queryParams['device']);
       //prefill the data
-      //this.f.get('systemId').setValue(this.device?.systemId);
+      this.f.get('systemId').setValue(this.device?.systemId);
       this.f.get('nameEN').setValue(this.device?.nameEN);
       this.f.get('nameTC').setValue(this.device?.nameTC);
       this.f.get('nameSC').setValue(this.device?.nameSC);
