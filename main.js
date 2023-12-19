@@ -72033,7 +72033,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "LogType": () => (/* binding */ LogType),
 /* harmony export */   "SystemName": () => (/* binding */ SystemName)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/table */ 85288);
 /* harmony import */ var src_app_device_log_content__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/device-log-content */ 95267);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ 2508);
@@ -73167,7 +73167,7 @@ class FilterDeviceLogComponent {
   }
   resetForm(isResetBtnClicked) {
     var _this = this;
-    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this.systems = [];
       _this.regFloors = [];
       _this.floors = [];
@@ -73406,7 +73406,7 @@ class FilterDeviceLogComponent {
         //wait for a second
       }
     }, 1000);
-    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       //call when user clicked refresh
       if (!src_app_app_component__WEBPACK_IMPORTED_MODULE_6__.AppComponent.isCallingOnClose) {
         console.log("Message onclose (filter)");
@@ -75725,7 +75725,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ViewDownloadReportComponent": () => (/* binding */ ViewDownloadReportComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var src_app_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/constants */ 4854);
 /* harmony import */ var src_app_file__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/file */ 20302);
 /* harmony import */ var src_app_service_websocket_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/service/websocket.service */ 99825);
@@ -76077,7 +76077,7 @@ class ViewDownloadReportComponent {
         //wait for a second
       }
     }, 1000);
-    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       //call when user clicked refresh
       if (!src_app_app_component__WEBPACK_IMPORTED_MODULE_6__.AppComponent.isCallingOnClose) {
         console.log("Message onClose (reports)");
@@ -76468,6 +76468,7 @@ class SampleDeviceData {
     this.nameSC = options?.nameSC;
     this.order = options?.order;
     this.systemId = options?.systemId;
+    this.lamp = options?.lamp;
     this.groupFilterIds = options?.groupFilterIds;
   }
 }
@@ -77314,16 +77315,16 @@ var _class;
 function AddEquipmentComponent_div_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "div", 29)(1, "a", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "div", 30)(1, "a", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("click", function AddEquipmentComponent_div_2_Template_a_click_1_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r14);
       const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵresetView"](ctx_r13.logout());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](2, "span", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](2, "span", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](3, "logout");
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](4, "h2", 32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](4, "h2", 33);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵpipe"](6, "translate");
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]()()();
@@ -77335,7 +77336,7 @@ function AddEquipmentComponent_div_2_Template(rf, ctx) {
 }
 function AddEquipmentComponent_mat_option_16_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "mat-option", 33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "mat-option", 34);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
   }
@@ -77404,7 +77405,7 @@ function AddEquipmentComponent_mat_error_80_Template(rf, ctx) {
 }
 function AddEquipmentComponent_mat_option_95_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "mat-option", 33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "mat-option", 34);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
   }
@@ -77417,19 +77418,25 @@ function AddEquipmentComponent_mat_option_95_Template(rf, ctx) {
 }
 function AddEquipmentComponent_button_100_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "button", 34);
+    const _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "button", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("click", function AddEquipmentComponent_button_100_Template_button_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r18);
+      const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵresetView"](ctx_r17.resetFormData());
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](1, " Reset ");
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
   }
 }
 function AddEquipmentComponent_button_101_Template(rf, ctx) {
   if (rf & 1) {
-    const _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "button", 35);
+    const _r20 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "button", 36);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("click", function AddEquipmentComponent_button_101_Template_button_click_0_listener() {
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r18);
-      const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
-      return _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵresetView"](ctx_r17.remove(ctx_r17.device));
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵrestoreView"](_r20);
+      const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵresetView"](ctx_r19.remove(ctx_r19.device));
     });
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](1, " Remove ");
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
@@ -77456,15 +77463,14 @@ class AddEquipmentComponent {
       code: 'zh_CN',
       label: '简体中文'
     }];
-    this.lampSelection = new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl('');
-    this.lampSelectionList = ['Lamp ON', 'Lamp Off', 'Normal', 'Fault', 'Unknown', 'Power Failure'];
+    this.lampDataList = [];
     this.previousSystemId = -1;
-    let savedLang = localStorage.getItem("LANG");
+    let savedLang = localStorage.getItem('LANG');
     if (savedLang != null) {
       this.siteLanguage = savedLang;
       translate.use(savedLang);
       this.currentLanguage = translate.currentLang;
-      console.log("currentLanguage", this.currentLanguage);
+      console.log('currentLanguage', this.currentLanguage);
     }
     //get previous navigation
     this.routerExtService.getPreviousUrl().then(value => {
@@ -77472,20 +77478,19 @@ class AddEquipmentComponent {
       console.log('previousUrl', this.previousUrl);
     });
     this.addEquipmentForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormGroup({
-      'systemId': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'nameEN': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'nameTC': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'nameSC': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'floor': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'interfacingLocation': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'description': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'designation': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'lampSelection': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
-      'groupFilter': new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl()
+      systemId: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      nameEN: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      nameTC: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      nameSC: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      floor: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      interfacingLocation: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      description: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      designation: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl(),
+      groupFilter: new _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormControl()
     });
     //To use "edit", use {queryParams : {'edit':true}} in navigator
     this.edit = this.activatedRoute.snapshot.queryParams['edit'] ?? false;
-    console.log("edit :", this.edit);
+    console.log('edit :', this.edit);
     if (this.edit) {
       this.device = JSON.parse(this.activatedRoute.snapshot.queryParams['device']);
       //prefill the data
@@ -77497,9 +77502,12 @@ class AddEquipmentComponent {
       this.f.get('interfacingLocation').setValue(this.device?.location);
       this.f.get('description').setValue(this.device?.description);
       this.f.get('designation').setValue(this.device?.designation);
-      // this.f['lampSelection'].setValue(this.device?.lamp);
       if (this.f.get('groupFilter') != null) this.f.get('groupFilter').setValue(this.device?.groupFilterIds);
+      this.lampDataList = this.device?.lamp;
     }
+  }
+  updateLampData(newLampList) {
+    this.lampDataList = newLampList;
   }
   get f() {
     return this.addEquipmentForm;
@@ -77519,17 +77527,22 @@ class AddEquipmentComponent {
   }
   filterBySystem(list) {
     return list.filter(filter => {
-      return filter.systemId == this.f.get("systemId").value;
+      return filter.systemId == this.f.get('systemId').value;
     });
   }
   ngOnInit() {
     let systemArr = _system_utils__WEBPACK_IMPORTED_MODULE_5__.SystemUtils.getListFromLocalStorage();
     this.sortArray(systemArr);
+    if (systemArr.length == 0) {
+      this.f.get('systemId').disable();
+    } else {
+      this.f.get('systemId').enable();
+    }
     this.groupFilterList = _system_utils__WEBPACK_IMPORTED_MODULE_5__.SystemUtils.getGroupFilterListFromLocalStorage();
     this.systemList.forEach(system => {
       if (system.id == undefined) {
         system.id = new Date().getTime().toString();
-        _system_utils__WEBPACK_IMPORTED_MODULE_5__.SystemUtils.updateItemToList(system, "nameEN");
+        _system_utils__WEBPACK_IMPORTED_MODULE_5__.SystemUtils.updateItemToList(system, 'nameEN');
       }
       // console.log("EN:",system.nameEN,"; TC:",system.nameTC,"; CN:",system.nameSC,"; id:",system.id,"; order:",system.order);
     });
@@ -77555,8 +77568,8 @@ class AddEquipmentComponent {
       if (data != this.previousSystemId) {
         this.previousSystemId = data;
         //Clear group filter field if other systems selected
-        console.log("system changes detected! clear group filter");
-        this.f.get("groupFilter")?.reset();
+        console.log('system changes detected! clear group filter');
+        this.f.get('groupFilter')?.reset();
         if (this.filterBySystem(this.groupFilterList).length == 0) {
           this.f.get('groupFilter').disable();
         } else {
@@ -77570,7 +77583,7 @@ class AddEquipmentComponent {
     if (selectedLanguage) {
       this.siteLanguage = selectedLanguage;
       this.translate.use(localeCode);
-      console.log("localCode", localeCode);
+      console.log('localCode', localeCode);
       localStorage.setItem('LANG', localeCode);
     }
     setTimeout(() => {
@@ -77615,44 +77628,44 @@ class AddEquipmentComponent {
     console.log(this.f.get('description')?.value);
     console.log(this.f.get('designation')?.value);
     //custom validation
-    if (this.f.get('systemId')?.value == "" || this.f.get('systemId')?.value == null) {
+    if (this.f.get('systemId')?.value == '' || this.f.get('systemId')?.value == null) {
       this.f.get('systemId')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.f.get('nameEN')?.value == "" || this.f.get('nameEN')?.value == null) {
+    if (this.f.get('nameEN')?.value == '' || this.f.get('nameEN')?.value == null) {
       this.f.get('nameEN')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.f.get('nameTC')?.value == "" || this.f.get('nameTC')?.value == null) {
+    if (this.f.get('nameTC')?.value == '' || this.f.get('nameTC')?.value == null) {
       this.f.get('nameTC')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.f.get('nameSC')?.value == "" || this.f.get('nameSC')?.value == null) {
+    if (this.f.get('nameSC')?.value == '' || this.f.get('nameSC')?.value == null) {
       this.f.get('nameSC')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.f.get('floor')?.value == "" || this.f.get('floor')?.value == null) {
+    if (this.f.get('floor')?.value == '' || this.f.get('floor')?.value == null) {
       this.f.get('floor')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.f.get('interfacingLocation')?.value == "" || this.f.get('interfacingLocation')?.value == null) {
+    if (this.f.get('interfacingLocation')?.value == '' || this.f.get('interfacingLocation')?.value == null) {
       this.f.get('interfacingLocation')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.f.get('description')?.value == "" || this.f.get('description')?.value == null) {
+    if (this.f.get('description')?.value == '' || this.f.get('description')?.value == null) {
       this.f.get('description')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.f.get('designation')?.value == "" || this.f.get('designation')?.value == null) {
+    if (this.f.get('designation')?.value == '' || this.f.get('designation')?.value == null) {
       this.f.get('designation')?.setErrors({
-        'required': true
+        required: true
       });
     }
     if (this.f.invalid) {
@@ -77661,7 +77674,7 @@ class AddEquipmentComponent {
     }
     let equipments = _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.getListFromLocalStorage();
     if (this.device == null) {
-      console.log("group filter ids : ", this.f.get('groupFilter')?.value);
+      console.log('group filter ids : ', this.f.get('groupFilter')?.value);
       //Add new system
       let newOrder = _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.getListFromLocalStorage().length + 1 ?? 1;
       let newDevice = new src_app_sample_device_data__WEBPACK_IMPORTED_MODULE_2__.SampleDeviceData({
@@ -77674,9 +77687,10 @@ class AddEquipmentComponent {
         nameSC: this.f.get('nameSC')?.value,
         order: newOrder,
         systemId: this.f.get('systemId')?.value,
+        lamp: this.lampDataList,
         groupFilterIds: this.f.get('groupFilter')?.value
       });
-      console.log("new device id:", newDevice.id);
+      console.log('new device id:', newDevice.id);
       equipments.push(newDevice);
     } else {
       //Edit existing system
@@ -77692,6 +77706,7 @@ class AddEquipmentComponent {
         nameSC: this.f.get('nameSC')?.value,
         order: currentSystemIndex + 1,
         systemId: this.f.get('systemId')?.value,
+        lamp: this.lampDataList,
         groupFilterIds: this.f.get('groupFilter')?.value
       });
     }
@@ -77702,11 +77717,22 @@ class AddEquipmentComponent {
       this.location.back();
     }
   }
+  resetFormData() {
+    this.lampDataList = [];
+    this.f.reset();
+  }
+  getSystemPlaceholder() {
+    if (this.filterBySystem(this.systemList).length == 0) {
+      return 'No Systems Available. Please add a System';
+    } else {
+      return 'Select System';
+    }
+  }
   getGroupFilterPlaceholder() {
     if (this.filterBySystem(this.groupFilterList).length == 0) {
-      return "No Group Filters Available in this System";
+      return 'No Group Filters Available in this System';
     } else {
-      return "Select Group Filters";
+      return 'Select Group Filters';
     }
   }
   remove(device) {
@@ -77732,7 +77758,7 @@ class AddEquipmentComponent {
   }
 }
 _class = AddEquipmentComponent;
-_class.route = "equipment-setup";
+_class.route = 'equipment-setup';
 _class.ɵfac = function AddEquipmentComponent_Factory(t) {
   return new (t || _class)(_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_11__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_12__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_12__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_13__.Location), _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdirectiveInject"](src_app_service_route_service__WEBPACK_IMPORTED_MODULE_6__.RouterExtService), _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_14__.MatDialog));
 };
@@ -77740,8 +77766,8 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefi
   type: _class,
   selectors: [["app-add-equipment"]],
   decls: 102,
-  vars: 15,
-  consts: [[2, "background", "lightblue"], ["pageTitle", "Add Equipment", 3, "backBtnClicked", "langChanged"], ["fxShow", "true", "fxHide.gt-sm", "true", 4, "ngIf"], [2, "padding", "15px", "background", "lightblue"], [3, "formGroup", "ngSubmit"], [1, "row"], [1, "border-box", "col-xl-4", "col-md-6", "col-sm-12"], [1, "card"], ["appearance", "outline", 2, "width", "100%"], ["formControlName", "systemId"], [3, "value", 4, "ngFor", "ngForOf"], [4, "ngIf"], ["appearance", "outline", 2, "width", "35vh"], ["matInput", "", "placeholder", "", "formControlName", "floor"], ["matInput", "", "placeholder", "", "formControlName", "interfacingLocation"], [2, "margin-left", "10px"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)"], [1, "card-divider"], ["formControlName", "description", "matInput", "", "value", "", "placeholder", "Write your description here...", "maxlength", "500", "rows", "5", 1, "description"], ["matInput", "", "placeholder", "", "formControlName", "designation"], ["matInput", "", "placeholder", "Name of the equipment", "formControlName", "nameEN"], ["matInput", "", "placeholder", "\u88DD\u7F6E\u540D\u7A31", "formControlName", "nameTC"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)", 3, "click"], ["matInput", "", "placeholder", "\u88C5\u7F6E\u540D\u79F0", "formControlName", "nameSC"], ["formControlName", "groupFilter", "multiple", ""], [1, "row", 2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["type", "submit", "mat-raised-button", "", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px"], ["type", "reset", "mat-raised-button", "", "style", "\n                font-size: 20px;\n                width: 20%;\n                height: 50px;\n                margin-left: 10px;\n              ", "color", "accent", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "style", "\n                font-size: 20px;\n                width: 20%;\n                height: 50px;\n                margin-left: 10px;\n              ", "color", "warn", 3, "click", 4, "ngIf"], ["fxShow", "true", "fxHide.gt-sm", "true"], ["mat-button", "", 3, "click"], [1, "material-icons", 2, "transform", "scale(1.2)", "margin-right", "5px"], [1, "menu-btn"], [3, "value"], ["type", "reset", "mat-raised-button", "", "color", "accent", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px"], ["type", "button", "mat-raised-button", "", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
+  vars: 17,
+  consts: [[2, "background", "lightblue"], ["pageTitle", "Add Equipment", 3, "backBtnClicked", "langChanged"], ["fxShow", "true", "fxHide.gt-sm", "true", 4, "ngIf"], [2, "padding", "15px", "background", "lightblue"], [3, "formGroup", "ngSubmit"], [1, "row"], [1, "border-box", "col-xl-4", "col-md-6", "col-sm-12"], [1, "card"], ["appearance", "outline", 2, "width", "100%"], ["formControlName", "systemId"], [3, "value", 4, "ngFor", "ngForOf"], [4, "ngIf"], ["appearance", "outline", 2, "width", "35vh"], ["matInput", "", "placeholder", "", "formControlName", "floor"], ["matInput", "", "placeholder", "", "formControlName", "interfacingLocation"], [2, "margin-left", "10px"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)"], [1, "card-divider"], ["formControlName", "description", "matInput", "", "value", "", "placeholder", "Write your description here...", "maxlength", "500", "rows", "5", 1, "description"], ["matInput", "", "placeholder", "", "formControlName", "designation"], ["matInput", "", "placeholder", "Name of the equipment", "formControlName", "nameEN"], ["matInput", "", "placeholder", "\u88DD\u7F6E\u540D\u7A31", "formControlName", "nameTC"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)", 3, "click"], ["matInput", "", "placeholder", "\u88C5\u7F6E\u540D\u79F0", "formControlName", "nameSC"], [3, "lampDataList", "updateLampData"], ["formControlName", "groupFilter", "multiple", ""], [1, "row", 2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["type", "submit", "mat-raised-button", "", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px"], ["type", "button", "mat-raised-button", "", "style", "\n                font-size: 20px;\n                width: 20%;\n                height: 50px;\n                margin-left: 10px;\n              ", "color", "accent", 3, "click", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "style", "\n                font-size: 20px;\n                width: 20%;\n                height: 50px;\n                margin-left: 10px;\n              ", "color", "warn", 3, "click", 4, "ngIf"], ["fxShow", "true", "fxHide.gt-sm", "true"], ["mat-button", "", 3, "click"], [1, "material-icons", 2, "transform", "scale(1.2)", "margin-right", "5px"], [1, "menu-btn"], [3, "value"], ["type", "button", "mat-raised-button", "", "color", "accent", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"], ["type", "button", "mat-raised-button", "", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
   template: function AddEquipmentComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "body", 0)(1, "app-navbar", 1);
@@ -77760,7 +77786,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](10, "Select System");
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](11, "p")(12, "mat-form-field", 8)(13, "mat-label");
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](14, "Select System");
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](14);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](15, "mat-select", 9);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](16, AddEquipmentComponent_mat_option_16_Template, 2, 2, "mat-option", 10);
@@ -77837,21 +77863,26 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](81, "div", 6)(82, "mat-card", 7)(83, "mat-card-content")(84, "h3");
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](85, "Lamp");
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelement"](86, "app-add-lamp")(87, "mat-divider", 17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](86, "app-add-lamp", 24);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵlistener"]("updateLampData", function AddEquipmentComponent_Template_app_add_lamp_updateLampData_86_listener($event) {
+        return ctx.updateLampData($event);
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelement"](87, "mat-divider", 17);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](88, "h3");
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](89, "Group Filter");
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](90, "p")(91, "mat-form-field", 8)(92, "mat-label");
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](93);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](94, "mat-select", 24);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](94, "mat-select", 25);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](95, AddEquipmentComponent_mat_option_95_Template, 2, 2, "mat-option", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](96, "section")(97, "div", 25)(98, "button", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](96, "section")(97, "div", 26)(98, "button", 27);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](99, " Submit ");
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](100, AddEquipmentComponent_button_100_Template, 2, 0, "button", 27);
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](101, AddEquipmentComponent_button_101_Template, 2, 0, "button", 28);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](100, AddEquipmentComponent_button_100_Template, 2, 0, "button", 28);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtemplate"](101, AddEquipmentComponent_button_101_Template, 2, 0, "button", 29);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]()()()()()()();
     }
     if (rf & 2) {
@@ -77859,7 +77890,9 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("ngIf", ctx.showMenu);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](2);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("formGroup", ctx.addEquipmentForm);
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtextInterpolate"](ctx.getSystemPlaceholder());
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](2);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("ngForOf", ctx.systemList);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](1);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("ngIf", ctx.f.get("systemId").hasError("required"));
@@ -77877,7 +77910,9 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefi
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("ngIf", ctx.f.get("nameTC").hasError("required"));
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](9);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("ngIf", ctx.f.get("nameSC").hasError("required"));
-      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("lampDataList", ctx.lampDataList);
+      _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](7);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtextInterpolate"](ctx.getGroupFilterPlaceholder());
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](2);
       _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("ngForOf", ctx.filterBySystem(ctx.groupFilterList));
@@ -77929,55 +77964,52 @@ var _class;
 
 
 
-function AddLampDialogComponent_div_2_Template(rf, ctx) {
+function AddLampDialogComponent_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " notification_add ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function AddLampDialogComponent_ng_template_3_Template(rf, ctx) {
+function AddLampDialogComponent_ng_template_4_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " notifications ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function AddLampDialogComponent_div_5_Template(rf, ctx) {
+function AddLampDialogComponent_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " Add Lamp ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function AddLampDialogComponent_ng_template_6_Template(rf, ctx) {
+function AddLampDialogComponent_ng_template_7_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " Edit Lamp ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function AddLampDialogComponent_ng_container_13_Template(rf, ctx) {
+function AddLampDialogComponent_mat_option_14_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "mat-option", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "mat-option", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
   }
   if (rf & 2) {
     const lamp_r10 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("value", lamp_r10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](lamp_r10.name);
   }
 }
-function AddLampDialogComponent_button_36_Template(rf, ctx) {
+function AddLampDialogComponent_button_37_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AddLampDialogComponent_button_36_Template_button_click_0_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AddLampDialogComponent_button_37_Template_button_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r12);
       const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r11.cancel());
@@ -77986,11 +78018,11 @@ function AddLampDialogComponent_button_36_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
   }
 }
-function AddLampDialogComponent_ng_template_37_Template(rf, ctx) {
+function AddLampDialogComponent_ng_template_38_Template(rf, ctx) {
   if (rf & 1) {
     const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 25);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AddLampDialogComponent_ng_template_37_Template_button_click_0_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AddLampDialogComponent_ng_template_38_Template_button_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r14);
       const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r13.remove());
@@ -78000,46 +78032,68 @@ function AddLampDialogComponent_ng_template_37_Template(rf, ctx) {
   }
 }
 class AddLampDialogComponent {
+  // dryContactTypeSelection = new FormControl<boolean>(false);
+  // alarmSelection = new FormControl<boolean>(false);
+  // reverseSelection = new FormControl<boolean>(false);
   constructor(dialogRef, data) {
     this.dialogRef = dialogRef;
     this.data = data;
     this.isEdit = false;
-    this.dryContactTypeSelection = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(false);
-    this.alarmSelection = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(false);
-    this.reverseSelection = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(false);
     this.lampSelectionList = data['selectionList'];
+    this.addLampForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormGroup({
+      lampSelect: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(null),
+      dryContactTypeSelection: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(false),
+      alarmSelection: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(false),
+      reverseSelection: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(false)
+    });
     if (data['lampData'] != null) {
       const lampData = data['lampData'];
-      this.lampSelection = lampData.lampSelect;
+      // this.lampSelection = lampData.lampSelect;
+      this.addLampForm.get('lampSelect').setValue(lampData.lampSelect);
       if (lampData.dryContactType > 0) {
-        this.dryContactTypeSelection.setValue(true);
+        // this.dryContactTypeSelection.setValue(true);
+        this.addLampForm.get('dryContactTypeSelection').setValue(true);
       } else {
-        this.dryContactTypeSelection.setValue(false);
+        // this.dryContactTypeSelection.setValue(false);
+        this.addLampForm.get('dryContactTypeSelection').setValue(false);
       }
-      this.alarmSelection.setValue(lampData.alarm);
-      this.reverseSelection.setValue(lampData.reverse);
+      // this.alarmSelection.setValue(lampData.alarm);
+      // this.reverseSelection.setValue(lampData.reverse);
+      this.addLampForm.get('alarmSelection').setValue(lampData.alarm);
+      this.addLampForm.get('reverseSelection').setValue(lampData.reverse);
       this.isEdit = true;
+      if (this.addLampForm.get('lampSelect').value != null) {
+        this.addLampForm.get('lampSelect').disable();
+      } else {
+        this.addLampForm.get('lampSelect').enable();
+      }
     }
   }
   save() {
     let dryContactType;
-    if (this.dryContactTypeSelection.value) {
+    // if (this.dryContactTypeSelection.value) {
+    if (this.addLampForm.get('dryContactTypeSelection').value) {
       dryContactType = 1;
     } else {
       dryContactType = 0;
     }
     let lampData = new _lamp_data__WEBPACK_IMPORTED_MODULE_0__.LampData({
-      lampSelect: this.lampSelection,
-      dryContactType: dryContactType,
-      alarm: this.alarmSelection.value,
-      reverse: this.reverseSelection.value,
+      // lampSelect: this.lampSelection,
+      // dryContactType: dryContactType,
+      // alarm: this.alarmSelection.value,
+      // reverse: this.reverseSelection.value,
+      lampSelect: this.addLampForm.get('lampSelect').value,
+      dryContactType: this.addLampForm.get('dryContactTypeSelection').value,
+      alarm: this.addLampForm.get('alarmSelection').value,
+      reverse: this.addLampForm.get('reverseSelection').value,
       markDelete: false
     });
     this.dialogRef.close(lampData);
   }
   remove() {
     let lampData = new _lamp_data__WEBPACK_IMPORTED_MODULE_0__.LampData({
-      lampSelect: this.lampSelection,
+      // lampSelect: this.lampSelection,
+      lampSelect: this.addLampForm.get('lampSelect').value,
       markDelete: true
     });
     this.dialogRef.close(lampData);
@@ -78055,79 +78109,71 @@ _class.ɵfac = function AddLampDialogComponent_Factory(t) {
 _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
   type: _class,
   selectors: [["app-add-lamp-dialog"]],
-  decls: 39,
-  vars: 12,
-  consts: [[1, "col", 2, "margin", "25px"], [2, "display", "flex", "align-items", "center", "margin-bottom", "15px"], ["class", "material-icons add-lamp-icon", 4, "ngIf", "ngIfElse"], ["editLampIcon", ""], ["style", "font-size: 24px; margin-left: 24px", 4, "ngIf", "ngIfElse"], ["editLamp", ""], [2, "margin-bottom", "15px"], ["appearance", "outline", 2, "width", "100%"], [3, "value", "disabled", "valueChange"], [4, "ngFor", "ngForOf"], [1, "row", "toggle-lamp-status", 2, "margin-bottom", "15px", "align-items", "center"], [1, "col-md-8"], [2, "font-size", "20px"], [1, "col-md-4"], ["size", "large", "checkedLabel", "N.C.", "uncheckedLabel", "N.O.", "defaultBgColor", "red", "uncheckedTextColor", "white", 3, "formControl"], ["size", "large", "checkedLabel", "Yes", "uncheckedLabel", "No", "defaultBgColor", "red", "uncheckedTextColor", "white", 3, "formControl"], [2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["mat-raised-button", "", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px", 3, "click"], ["mat-raised-button", "", "style", "\n                    font-size: 20px;\n                    width: 20%;\n                    height: 50px;\n                    margin-left: 10px;\n                ", "color", "accent", 3, "click", 4, "ngIf", "ngIfElse"], ["deleteBtn", ""], [1, "material-icons", "add-lamp-icon"], [1, "material-icons", "edit-lamp-icon"], [2, "font-size", "24px", "margin-left", "24px"], [3, "value"], ["mat-raised-button", "", "color", "accent", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"], ["mat-raised-button", "", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
+  decls: 40,
+  vars: 8,
+  consts: [[1, "col", 2, "margin", "25px"], [3, "formGroup", "ngSubmit"], [2, "display", "flex", "align-items", "center", "margin-bottom", "15px"], ["class", "material-icons add-lamp-icon", 4, "ngIf", "ngIfElse"], ["editLampIcon", ""], ["style", "font-size: 24px; margin-left: 24px", 4, "ngIf", "ngIfElse"], ["editLamp", ""], [2, "margin-bottom", "15px"], ["appearance", "outline", 2, "width", "100%"], ["formControlName", "lampSelect"], [3, "value", 4, "ngFor", "ngForOf"], [1, "row", "toggle-lamp-status", 2, "margin-bottom", "15px", "align-items", "center"], [1, "col-md-8"], [2, "font-size", "20px"], [1, "col-md-4"], ["size", "large", "formControlName", "dryContactTypeSelection", "checkedLabel", "N.C.", "uncheckedLabel", "N.O.", "defaultBgColor", "red", "uncheckedTextColor", "white"], ["size", "large", "formControlName", "alarmSelection", "checkedLabel", "Yes", "uncheckedLabel", "No", "defaultBgColor", "red", "uncheckedTextColor", "white"], ["size", "large", "formControlName", "reverseSelection", "checkedLabel", "Yes", "uncheckedLabel", "No", "defaultBgColor", "red", "uncheckedTextColor", "white"], [2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["mat-raised-button", "", "type", "submit", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px"], ["mat-raised-button", "", "style", "\n                    font-size: 20px;\n                    width: 20%;\n                    height: 50px;\n                    margin-left: 10px;\n                ", "type", "button", "color", "accent", 3, "click", 4, "ngIf", "ngIfElse"], ["deleteBtn", ""], [1, "material-icons", "add-lamp-icon"], [1, "material-icons", "edit-lamp-icon"], [2, "font-size", "24px", "margin-left", "24px"], [3, "value"], ["mat-raised-button", "", "type", "button", "color", "accent", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"], ["mat-raised-button", "", "type", "button", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
   template: function AddLampDialogComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, AddLampDialogComponent_div_2_Template, 2, 0, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, AddLampDialogComponent_ng_template_3_Template, 2, 0, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, AddLampDialogComponent_div_5_Template, 2, 0, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, AddLampDialogComponent_ng_template_6_Template, 2, 0, "ng-template", null, 5, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](8, "mat-divider", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "mat-form-field", 7)(10, "mat-label");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, "Select Lamp Status");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "mat-select", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("valueChange", function AddLampDialogComponent_Template_mat_select_valueChange_12_listener($event) {
-        return ctx.lampSelection = $event;
-      });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, AddLampDialogComponent_ng_container_13_Template, 3, 2, "ng-container", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "div", 10)(15, "div", 11)(16, "b", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17, "Dry Contact Type (N.O, N.C.): ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 13);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](19, "ui-switch", 14);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "div", 10)(21, "div", 11)(22, "b", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Alarm: ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "div", 13);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](25, "ui-switch", 15);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "div", 10)(27, "div", 11)(28, "b", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Reverse: ");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "div", 13);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](31, "ui-switch", 15);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](32, "mat-divider", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "div", 16)(34, "button", 17);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function AddLampDialogComponent_Template_button_click_34_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "form", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngSubmit", function AddLampDialogComponent_Template_form_ngSubmit_1_listener() {
         return ctx.save();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, " Save ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, AddLampDialogComponent_div_3_Template, 2, 0, "div", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, AddLampDialogComponent_ng_template_4_Template, 2, 0, "ng-template", null, 4, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, AddLampDialogComponent_div_6_Template, 2, 0, "div", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, AddLampDialogComponent_ng_template_7_Template, 2, 0, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](36, AddLampDialogComponent_button_36_Template, 2, 0, "button", 18);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](37, AddLampDialogComponent_ng_template_37_Template, 2, 0, "ng-template", null, 19, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](9, "mat-divider", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "mat-form-field", 8)(11, "mat-label");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "Select Lamp Status");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "mat-select", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](14, AddLampDialogComponent_mat_option_14_Template, 2, 2, "mat-option", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "div", 11)(16, "div", 12)(17, "b", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](18, "Dry Contact Type (N.O, N.C.): ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](20, "ui-switch", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "div", 11)(22, "div", 12)(23, "b", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Alarm: ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](26, "ui-switch", 16);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "div", 11)(28, "div", 12)(29, "b", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Reverse: ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "div", 14);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](32, "ui-switch", 17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](33, "mat-divider", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "div", 18)(35, "button", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, " Save ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](37, AddLampDialogComponent_button_37_Template, 2, 0, "button", 20);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](38, AddLampDialogComponent_ng_template_38_Template, 2, 0, "ng-template", null, 21, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
     }
     if (rf & 2) {
-      const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](4);
-      const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](7);
-      const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](38);
+      const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](5);
+      const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](8);
+      const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](39);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx.addLampForm);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.isEdit)("ngIfElse", _r1);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.isEdit)("ngIfElse", _r4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("value", ctx.lampSelection)("disabled", ctx.isEdit);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](8);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.lampSelectionList);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formControl", ctx.dryContactTypeSelection);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formControl", ctx.alarmSelection);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formControl", ctx.reverseSelection);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](23);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.isEdit)("ngIfElse", _r8);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControlDirective, _angular_material_divider__WEBPACK_IMPORTED_MODULE_5__.MatDivider, _angular_material_button__WEBPACK_IMPORTED_MODULE_6__.MatButton, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__.MatLabel, _angular_material_select__WEBPACK_IMPORTED_MODULE_8__.MatSelect, _angular_material_core__WEBPACK_IMPORTED_MODULE_9__.MatOption, ngx_ui_switch__WEBPACK_IMPORTED_MODULE_10__.UiSwitchComponent],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControlName, _angular_material_divider__WEBPACK_IMPORTED_MODULE_5__.MatDivider, _angular_material_button__WEBPACK_IMPORTED_MODULE_6__.MatButton, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__.MatLabel, _angular_material_select__WEBPACK_IMPORTED_MODULE_8__.MatSelect, _angular_material_core__WEBPACK_IMPORTED_MODULE_9__.MatOption, ngx_ui_switch__WEBPACK_IMPORTED_MODULE_10__.UiSwitchComponent],
   styles: [".add-lamp-icon[_ngcontent-%COMP%] {\n    background: rgb(0, 128, 55);\n    color: white;\n    border-radius: 25px;\n    width: 60px; \n    height: 60px;\n    font-size: 40px; \n    padding: 10px; \n}\n\n.edit-lamp-icon[_ngcontent-%COMP%] {\n    background: rgb(7, 142, 209);\n    color: white;\n    border-radius: 25px;\n    width: 60px; \n    height: 60px;\n    font-size: 40px; \n    padding: 10px; \n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvc3lzdGVtL2FkZC1lcXVpcG1lbnQvYWRkLWxhbXAvYWRkLWxhbXAtZGlhbG9nL2FkZC1sYW1wLWRpYWxvZy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksMkJBQTJCO0lBQzNCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsV0FBVyxFQUFFLG9CQUFvQjtJQUNqQyxZQUFZO0lBQ1osZUFBZSxFQUFFLGNBQWM7SUFDL0IsYUFBYSxFQUFFLDRCQUE0QjtBQUMvQzs7QUFFQTtJQUNJLDRCQUE0QjtJQUM1QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLFdBQVcsRUFBRSxvQkFBb0I7SUFDakMsWUFBWTtJQUNaLGVBQWUsRUFBRSxjQUFjO0lBQy9CLGFBQWEsRUFBRSw0QkFBNEI7QUFDL0MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWRkLWxhbXAtaWNvbiB7XG4gICAgYmFja2dyb3VuZDogcmdiKDAsIDEyOCwgNTUpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAyNXB4O1xuICAgIHdpZHRoOiA2MHB4OyAvKiBiYWNrZ3JvdW5kIHNpemUgKi9cbiAgICBoZWlnaHQ6IDYwcHg7XG4gICAgZm9udC1zaXplOiA0MHB4OyAvKiBpY29uIHNpemUgKi9cbiAgICBwYWRkaW5nOiAxMHB4OyAvKiAoYmFja2dyb3VuZCAtIGljb24pIC8gMiAqL1xufVxuXG4uZWRpdC1sYW1wLWljb24ge1xuICAgIGJhY2tncm91bmQ6IHJnYig3LCAxNDIsIDIwOSk7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDI1cHg7XG4gICAgd2lkdGg6IDYwcHg7IC8qIGJhY2tncm91bmQgc2l6ZSAqL1xuICAgIGhlaWdodDogNjBweDtcbiAgICBmb250LXNpemU6IDQwcHg7IC8qIGljb24gc2l6ZSAqL1xuICAgIHBhZGRpbmc6IDEwcHg7IC8qIChiYWNrZ3JvdW5kIC0gaWNvbikgLyAyICovXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
 });
 
@@ -78152,6 +78198,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/button */ 84522);
 /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/icon */ 57822);
 var _class;
+
 
 
 
@@ -78243,6 +78290,7 @@ class AddLampComponent {
     this.dialog = dialog;
     this.lampDataList = [];
     this.availableLampData = [new _lamp_select__WEBPACK_IMPORTED_MODULE_1__.LampSelect('Lamp ON', false), new _lamp_select__WEBPACK_IMPORTED_MODULE_1__.LampSelect('Lamp Off', false), new _lamp_select__WEBPACK_IMPORTED_MODULE_1__.LampSelect('Normal', false), new _lamp_select__WEBPACK_IMPORTED_MODULE_1__.LampSelect('Fault', false), new _lamp_select__WEBPACK_IMPORTED_MODULE_1__.LampSelect('Unknown', false), new _lamp_select__WEBPACK_IMPORTED_MODULE_1__.LampSelect('Power Failure', false)];
+    this.updateLampData = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
   }
   openAddLampDialog() {
     this.dialogRef = this.dialog.open(_add_lamp_dialog_add_lamp_dialog_component__WEBPACK_IMPORTED_MODULE_0__.AddLampDialogComponent, {
@@ -78261,6 +78309,8 @@ class AddLampComponent {
         this.lampDataList.push(lampData);
         //mark selected. Shortlisted the selected ones
         this.availableLampData.find(element => element.name == lampData.lampSelect.name).selected = true;
+        //notify add / edit equipment for the changes
+        this.updateLampData.emit(this.lampDataList);
       }
     });
   }
@@ -78288,12 +78338,14 @@ class AddLampComponent {
           //find the delete entry
           if (index != -1) {
             this.lampDataList.splice(index, 1);
+            this.updateLampData.emit(this.lampDataList);
           }
         } else {
           //find and replace the existing one
           // let index = this.lampDataList.findIndex(m => m.lampSelect.name === lampData.lampSelect.name);
           if (index != -1) {
             this.lampDataList[index] = lampData;
+            this.updateLampData.emit(this.lampDataList);
           }
           //mark selected. Shortlisted the selected ones
           this.availableLampData.find(element => element.name == lampData.lampSelect.name).selected = true;
@@ -78309,9 +78361,15 @@ _class.ɵfac = function AddLampComponent_Factory(t) {
 _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
   type: _class,
   selectors: [["app-add-lamp"]],
+  inputs: {
+    lampDataList: "lampDataList"
+  },
+  outputs: {
+    updateLampData: "updateLampData"
+  },
   decls: 6,
   vars: 1,
-  consts: [[1, "col"], [4, "ngFor", "ngForOf"], ["mat-stroked-button", "", 2, "width", "100%", "margin-bottom", "15px", 3, "click"], [2, "padding", "15px", "margin-bottom", "10px", "border", "1px solid darkgrey", "border-radius", "5px", 3, "click"], [1, "row"], [1, "col-md-6", 2, "margin", "auto"], [1, "col-md-6", 2, "display", "inline-flex", "justify-content", "flex-end"], ["class", "first-dry-contact-badge", 4, "ngIf", "ngIfElse"], ["secondType", ""], ["alarmOff", ""], ["reverseOff", ""], [1, "first-dry-contact-badge"], [1, "second-dry-contact-badge"]],
+  consts: [[1, "col"], [4, "ngFor", "ngForOf"], ["type", "button", "mat-stroked-button", "", 2, "width", "100%", "margin-bottom", "15px", 3, "click"], [2, "padding", "15px", "margin-bottom", "10px", "border", "1px solid darkgrey", "border-radius", "5px", 3, "click"], [1, "row"], [1, "col-md-6", 2, "margin", "auto"], [1, "col-md-6", 2, "display", "inline-flex", "justify-content", "flex-end"], ["class", "first-dry-contact-badge", 4, "ngIf", "ngIfElse"], ["secondType", ""], ["alarmOff", ""], ["reverseOff", ""], [1, "first-dry-contact-badge"], [1, "second-dry-contact-badge"]],
   template: function AddLampComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
@@ -79988,7 +80046,7 @@ class ListEquipmentComponent {
   }
 }
 _class = ListEquipmentComponent;
-_class.route = "equipment-list";
+_class.route = "list-equipment";
 _class.ɵfac = function ListEquipmentComponent_Factory(t) {
   return new (t || _class)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.Location));
 };
