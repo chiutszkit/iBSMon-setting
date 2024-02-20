@@ -78810,7 +78810,6 @@ class AddEquipmentComponent {
     this.router.navigateByUrl('/add-group-filter');
   }
   submitEquipment(options) {
-    //saved inputs in case of network failure. Can recover after 
     this.saveEquipmentInputs();
     let message = {
       type: '',
@@ -78919,8 +78918,8 @@ class AddEquipmentComponent {
     }
     console.log('group filter ids : ', this.f.get('groupFilter')?.value);
     //TODO: replace
-    let equipments = _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.getListFromLocalStorage();
-    let setting = _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.getEquipmentSettingToLocalStorage();
+    this.equipments = _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.getListFromLocalStorage();
+    this.setting = _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.getEquipmentSettingToLocalStorage();
     let equipment_list = _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.getEquipmentBySystemId(this.f.get('systemId')?.value);
     if (this.device == null) {
       //Add new system
@@ -78969,12 +78968,12 @@ class AddEquipmentComponent {
         equipment: newEquipment
       });
       //TODO: replace
-      equipments.push(newDevice);
+      this.equipments.push(newDevice);
       equipment_list.push(newEquipment);
-      let selectedSystemDetail = setting.detail.findIndex(s => s.systemID === this.f.get('systemId')?.value);
+      let selectedSystemDetail = this.setting.detail.findIndex(s => s.systemID === this.f.get('systemId')?.value);
       if (selectedSystemDetail != -1) {
         //update the setting => saving to local
-        setting.detail[selectedSystemDetail].equipments = equipment_list;
+        this.setting.detail[selectedSystemDetail].equipments = equipment_list;
       } else {
         //for testing purpose. No matched systemID case
         let newSystemDetail = new src_app_equipment_setting__WEBPACK_IMPORTED_MODULE_7__.SystemDetail({
@@ -78984,12 +78983,15 @@ class AddEquipmentComponent {
           system_SC: 'System A (SC)',
           equipments: equipment_list
         });
-        setting.detail.push(newSystemDetail);
+        this.setting.detail.push(newSystemDetail);
       }
     } else {
       //Edit existing system
-      let currentSystemIndex = equipments.findIndex(s => s.id === this.device.id);
-      equipments[currentSystemIndex] = new src_app_sample_device_data__WEBPACK_IMPORTED_MODULE_2__.SampleDeviceData({
+      //TODO:
+      let currentSystemIndex = this.equipments.findIndex(s => s.id === this.device.id);
+      //EquipmentSetting
+      //the equipment_ID & order has to be passed to component first
+      this.equipments[currentSystemIndex] = new src_app_sample_device_data__WEBPACK_IMPORTED_MODULE_2__.SampleDeviceData({
         id: this.device.id,
         floor: this.f.get('floor')?.value,
         designation: this.f.get('designation')?.value,
@@ -79001,25 +79003,37 @@ class AddEquipmentComponent {
         lamp: this.lampDataList,
         groupFilterIds: this.f.get('groupFilter')?.value
       });
+      let equipmentToBeEdit = new src_app_equipment_setting__WEBPACK_IMPORTED_MODULE_7__.Equipment({
+        floor: this.f.get('floor')?.value,
+        name_EN: this.f.get('nameEN')?.value,
+        name_CN: this.f.get('nameTC')?.value,
+        name_SC: this.f.get('nameSC')?.value,
+        designation: this.f.get('designation')?.value,
+        //
+        order: currentSystemIndex + 1,
+        systemId: this.f.get('systemId')?.value,
+        lamp: this.lampDataList,
+        groupFilterIds: this.f.get('groupFilter')?.value
+      });
       //Find the corresponding group filter and insert the designation
       if (this.f.get('groupFilter')?.value != null) {
         let groupFilterIds = this.f.get('groupFilter')?.value;
         let groupFilterList = _system_utils__WEBPACK_IMPORTED_MODULE_5__.SystemUtils.getGroupFilterListFromLocalStorage();
         groupFilterIds.forEach(selectedFilterId => {
           const groupFilter = groupFilterList.find(groupFilter => groupFilter.id === selectedFilterId);
-          groupFilter.equipmentIds.push(equipments[currentSystemIndex].id);
+          groupFilter.equipmentIds.push(this.equipments[currentSystemIndex].id);
         });
         _system_utils__WEBPACK_IMPORTED_MODULE_5__.SystemUtils.saveGroupFilterListToLocalStorage(groupFilterList);
       }
       //submit existing equipment through websocket
       this.submitEquipment({
-        equipment: equipments[currentSystemIndex],
+        equipment: equipmentToBeEdit,
         id: this.device.id
       });
     }
     //TODO: replace
-    _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.saveListToLocalStorage(equipments);
-    _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.saveEquipmentSettingToLocalStorage(setting);
+    _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.saveListToLocalStorage(this.equipments);
+    _equipment_utils__WEBPACK_IMPORTED_MODULE_3__.EquipmentUtils.saveEquipmentSettingToLocalStorage(this.setting);
   }
   resetFormData() {
     this.lampDataList = [];
