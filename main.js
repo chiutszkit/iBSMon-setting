@@ -1214,7 +1214,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_29__["ɵɵdef
     }
   },
   dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_36__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_36__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_36__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_36__.NgStyle, ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_26__.BsDropdownMenuDirective, ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_26__.BsDropdownToggleDirective, ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_26__.BsDropdownDirective, _angular_material_button__WEBPACK_IMPORTED_MODULE_37__.MatAnchor, _angular_material_button__WEBPACK_IMPORTED_MODULE_37__.MatButton, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatTable, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatHeaderCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatHeaderRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatColumnDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatHeaderCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatHeaderRow, _angular_material_table__WEBPACK_IMPORTED_MODULE_30__.MatRow, _angular_material_icon__WEBPACK_IMPORTED_MODULE_38__.MatIcon, _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_27__.NavbarComponent, _system_device_status_equipment_detail_component__WEBPACK_IMPORTED_MODULE_28__.EquipmentDetailComponent, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_34__.TranslatePipe],
-  styles: [".system-group[_ngcontent-%COMP%] > .row[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: nowrap;\n  overflow-x: auto;\n}\n\n.system-group[_ngcontent-%COMP%] > .row[_ngcontent-%COMP%] > .col-md-4[_ngcontent-%COMP%] {\n  flex: 0 0 auto;\n}\n\n\n.content[_ngcontent-%COMP%] {\n  max-width: 1460px;\n}\n\n#header[_ngcontent-%COMP%] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  background-color: white;\n  word-wrap: normal;\n}\n\n\n.system-group[_ngcontent-%COMP%]   #GroupList[_ngcontent-%COMP%] {\n  font-weight: 600;\n  font-size: 34px;\n  color: black;\n}\n\n\n.system-group[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-weight: 600;\n  font-size: 34px;\n  color: black;\n}\n\n\n#alarm-status[_ngcontent-%COMP%] {\n  display: table;\n  background-color: mistyrose;\n  table-layout: fixed;\n}\n\n\nth[_ngcontent-%COMP%] {\n  position: sticky;\n  top: 0px;\n  \n  background: white;\n}\n\n\n.header-font[_ngcontent-%COMP%] {\n  font-size: 22px;\n  font-weight: 600;\n}\n\n\n.content-text[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n\n#system[_ngcontent-%COMP%] {\n  display: table;\n  width: 260px; \n  \n  table-layout: fixed;\n}\n\n\n#system[_ngcontent-%COMP%]   th[_ngcontent-%COMP%] {\n  display: block;\n  position: sticky;\n  top: -2px;\n  \n  border: 0px;\n  z-index: 1;\n  \n  \n}\n\n#system[_ngcontent-%COMP%]   th[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  font-size: 22px;\n  font-weight: 700;\n  height: 50px;\n}\n\n\n#system[_ngcontent-%COMP%]   tr[_ngcontent-%COMP%] {\n  display: table-cell;\n  width: 260px;\n  vertical-align: top;\n}\n\n\n\n\n#system[_ngcontent-%COMP%]   tr[_ngcontent-%COMP%] {\n  border-left: 1px solid lightgray;\n  border-right: 1px solid lightgray;\n}\n\nspan[_ngcontent-%COMP%] {\n  text-align: start;\n  display: inline-block;\n  width: 100%;\n}\n\n.container[_ngcontent-%COMP%] {\n  padding: 0px;\n  margin: 15px;\n}\n\n.alarm-card[_ngcontent-%COMP%] {\n  width: 100%;\n  display: flex;\n  padding-left: 0px;\n  padding-right: 0px;\n  margin: 12px auto 0px auto;\n}\n\n.alarm-status-body[_ngcontent-%COMP%] {\n  flex-grow: 1;\n}\n\n.alarm-status-time[_ngcontent-%COMP%] {\n  margin: auto 5px auto 15px;\n}\n\n\n.menu-btn[_ngcontent-%COMP%] {\n  color: white;\n  margin: auto;\n}\n\nh5[_ngcontent-%COMP%] {\n  display: inline-block;\n  vertical-align: baseline;\n}\n\n\n.to-top[_ngcontent-%COMP%] {\n  bottom: 0;\n  cursor: pointer;\n  margin: 0 8px 12px 0;\n  position: fixed;\n  right: 0;\n  text-align: center;\n}\n\n.show-scrollTop[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 0.2s ease-in-out;\n}\n\n\n.inline-1[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin-right: 35px;\n  vertical-align: middle;\n}\n\n.inline-2[_ngcontent-%COMP%] {\n  display: inline-block;\n  vertical-align: middle;\n}\n\n.color[_ngcontent-%COMP%] {\n  animation: _ngcontent-%COMP%_col 1s linear infinite;\n}\n\n@keyframes _ngcontent-%COMP%_col {\n\n  0%,\n  50% {\n    fill: #000000;\n    stroke: transparent;\n  }\n\n  51%,\n  100% {\n    fill: #ff0000;\n    stroke: #ff0000;\n  }\n}\n\n.add-icon-display[_ngcontent-%COMP%] {\n  transform: scale(1.5);\n  color: white;\n}\n\n.setting-icon-display[_ngcontent-%COMP%] {\n  margin: 10px;\n  color: black;\n}\n\n.action-button[_ngcontent-%COMP%] {\n  margin: 10px 20px; \n  font-size: 20px;\n  padding: 20px;\n}\n\n.example-button-row[_ngcontent-%COMP%] {\n  float: right;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvYWRtaW4vYWRtaW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQSw2REFBNkQ7QUFDN0Q7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsb0JBQW9CO0VBQ3BCLHVCQUF1QjtFQUN2QixpQkFBaUI7QUFDbkI7O0FBRUEsbUJBQW1CO0FBQ25CO0VBQ0UsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUEsY0FBYztBQUNkO0VBQ0UsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUEsa0NBQWtDO0FBQ2xDO0VBQ0UsY0FBYztFQUNkLDJCQUEyQjtFQUMzQixtQkFBbUI7QUFDckI7O0FBRUEsOEJBQThCO0FBQzlCO0VBQ0UsZ0JBQWdCO0VBQ2hCLFFBQVE7RUFDUiw4REFBOEQ7RUFDOUQsaUJBQWlCO0FBQ25COztBQUVBLGlDQUFpQztBQUNqQztFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBRUEsNEJBQTRCO0FBQzVCO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQSw2REFBNkQ7QUFDN0Q7RUFDRSxjQUFjO0VBQ2QsWUFBWSxFQUFFLG9CQUFvQjtFQUNsQyxvRUFBb0U7RUFDcEUsbUJBQW1CO0FBQ3JCOztBQUVBLDBCQUEwQjtBQUMxQjtFQUNFLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsU0FBUztFQUNULCtEQUErRDtFQUMvRCxXQUFXO0VBQ1gsVUFBVTtFQUNWLG9EQUFvRDtFQUNwRCxrREFBa0Q7QUFDcEQ7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLFlBQVk7QUFDZDs7QUFFQSxlQUFlO0FBQ2Y7RUFDRSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLG1CQUFtQjtBQUNyQjs7QUFFQSxrRUFBa0U7O0FBRWxFLGVBQWU7QUFDZjtFQUNFLGdDQUFnQztFQUNoQyxpQ0FBaUM7QUFDbkM7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIscUJBQXFCO0VBQ3JCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsMEJBQTBCO0FBQzVCOztBQUVBLHFCQUFxQjtBQUNyQjtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsd0JBQXdCO0FBQzFCOztBQUVBLGNBQWM7QUFDZDtFQUNFLFNBQVM7RUFDVCxlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLGVBQWU7RUFDZixRQUFRO0VBQ1Isa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLGdDQUFnQztBQUNsQzs7QUFFQSxlQUFlO0FBQ2Y7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxpQ0FBaUM7QUFDbkM7O0FBRUE7O0VBRUU7O0lBRUUsYUFBYTtJQUNiLG1CQUFtQjtFQUNyQjs7RUFFQTs7SUFFRSxhQUFhO0lBQ2IsZUFBZTtFQUNqQjtBQUNGOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxpQkFBaUIsRUFBRSxnQ0FBZ0M7RUFDbkQsZUFBZTtFQUNmLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFlBQVk7QUFDZCIsInNvdXJjZXNDb250ZW50IjpbIi5zeXN0ZW0tZ3JvdXA+LnJvdyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtd3JhcDogbm93cmFwO1xuICBvdmVyZmxvdy14OiBhdXRvO1xufVxuXG4uc3lzdGVtLWdyb3VwPi5yb3c+LmNvbC1tZC00IHtcbiAgZmxleDogMCAwIGF1dG87XG59XG5cbi8qQ29udGVudCBsZW5ndGguIENlbnRlcmVkIGFsbCBjb250ZW50IGJleW9uZCB0aGlzIG1heC13aWR0aCovXG4uY29udGVudCB7XG4gIG1heC13aWR0aDogMTQ2MHB4O1xufVxuXG4jaGVhZGVyIHtcbiAgcGFkZGluZy10b3A6IDE1cHg7XG4gIHBhZGRpbmctYm90dG9tOiAxNXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgd29yZC13cmFwOiBub3JtYWw7XG59XG5cbi8qQWxhcm1TdGF0dXMgdGV4dCovXG4uc3lzdGVtLWdyb3VwICNHcm91cExpc3Qge1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDM0cHg7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLypTeXN0ZW0gdGV4dCovXG4uc3lzdGVtLWdyb3VwIGgxIHtcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgZm9udC1zaXplOiAzNHB4O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi8qIEFsYXJtIFN0YXR1cyB0YWJsZSBhdHRyaWJ1dGVzICovXG4jYWxhcm0tc3RhdHVzIHtcbiAgZGlzcGxheTogdGFibGU7XG4gIGJhY2tncm91bmQtY29sb3I6IG1pc3R5cm9zZTtcbiAgdGFibGUtbGF5b3V0OiBmaXhlZDtcbn1cblxuLyogQWxhcm0gU3RhdHVzIHRhYmxlIGhlYWRlciAqL1xudGgge1xuICBwb3NpdGlvbjogc3RpY2t5O1xuICB0b3A6IDBweDtcbiAgLyogMHB4IGlmIHlvdSBkb24ndCBoYXZlIGEgbmF2YmFyLCBidXQgc29tZXRoaW5nIGlzIHJlcXVpcmVkICovXG4gIGJhY2tncm91bmQ6IHdoaXRlO1xufVxuXG4vKkFsYXJtIFN0YXR1cyB0YWJsZSBoZWFkZXIgdGV4dCovXG4uaGVhZGVyLWZvbnQge1xuICBmb250LXNpemU6IDIycHg7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG59XG5cbi8qQWxhcm0gU3RhdHVzIGNvbnRlbnQgdGV4dCovXG4uY29udGVudC10ZXh0IHtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4vKiBTeXN0ZW0gdGFibGUgYXR0cmlidXRlcy4gTW9kaWZ5IHRoZSB3aWR0aCB3aGVyZSBuZWNlc3NhcnkqL1xuI3N5c3RlbSB7XG4gIGRpc3BsYXk6IHRhYmxlO1xuICB3aWR0aDogMjYwcHg7IC8qd2lkdGggZm9yIG9uZSByb3cqL1xuICAvKiBleHBhbmQgaWYgcm93IG51bWJlciBpbmNyZWFzZXMgKDEzMDAgaXMgZGVmYXVsdCBmb3IgNS1yb3ctdGFibGUpKi9cbiAgdGFibGUtbGF5b3V0OiBmaXhlZDtcbn1cblxuLyp0YWJsZSBoZWFkZXIgYXR0cmlidXRlcyovXG4jc3lzdGVtIHRoIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBzdGlja3k7XG4gIHRvcDogLTJweDtcbiAgLypzZXQgLTIgKG9yIGEgbnVtYmVyIGxlc3MgdGhhbiAwKSBpZiBub3RoaW5nIG9uIHRvcCBvZiBoZWFkZXIqL1xuICBib3JkZXI6IDBweDtcbiAgei1pbmRleDogMTtcbiAgLyptdXN0IGJlIGxhcmdlciB0aGFuIHRoZSB2YWx1ZSBzZXQgaW4gLmRvdC1hbmltYXRlKi9cbiAgLyogbWFyZ2luOiAtMnB4OyB1c2UgdGhpcyB0byBlbGltaW5hdGUgaGVhZGVyIGdhcCovXG59XG5cbiNzeXN0ZW0gdGggaDMge1xuICBmb250LXNpemU6IDIycHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGhlaWdodDogNTBweDtcbn1cblxuLyp0YWJsZSBjb2x1bW4qL1xuI3N5c3RlbSB0ciB7XG4gIGRpc3BsYXk6IHRhYmxlLWNlbGw7XG4gIHdpZHRoOiAyNjBweDtcbiAgdmVydGljYWwtYWxpZ246IHRvcDtcbn1cblxuLyp0YWJsZSBjZWxsICh0ZCksIHBsZWFzZSByZWZlciB0byBlcXVpcG1lbnQtZGV0YWlsLmNvbXBvbmVudC5jc3MqL1xuXG4vKnRhYmxlIGJvcmRlciovXG4jc3lzdGVtIHRyIHtcbiAgYm9yZGVyLWxlZnQ6IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbn1cblxuc3BhbiB7XG4gIHRleHQtYWxpZ246IHN0YXJ0O1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uY29udGFpbmVyIHtcbiAgcGFkZGluZzogMHB4O1xuICBtYXJnaW46IDE1cHg7XG59XG5cbi5hbGFybS1jYXJkIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmctbGVmdDogMHB4O1xuICBwYWRkaW5nLXJpZ2h0OiAwcHg7XG4gIG1hcmdpbjogMTJweCBhdXRvIDBweCBhdXRvO1xufVxuXG4uYWxhcm0tc3RhdHVzLWJvZHkge1xuICBmbGV4LWdyb3c6IDE7XG59XG5cbi5hbGFybS1zdGF0dXMtdGltZSB7XG4gIG1hcmdpbjogYXV0byA1cHggYXV0byAxNXB4O1xufVxuXG4vKm5hdmJhciBtZW51IGJ1dHRvbiovXG4ubWVudS1idG4ge1xuICBjb2xvcjogd2hpdGU7XG4gIG1hcmdpbjogYXV0bztcbn1cblxuaDUge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTtcbn1cblxuLypCYWNrIHRvIHRvcCovXG4udG8tdG9wIHtcbiAgYm90dG9tOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIG1hcmdpbjogMCA4cHggMTJweCAwO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHJpZ2h0OiAwO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5zaG93LXNjcm9sbFRvcCB7XG4gIG9wYWNpdHk6IDE7XG4gIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2UtaW4tb3V0O1xufVxuXG4vKkFsYXJtIFN0YXR1cyovXG4uaW5saW5lLTEge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbi1yaWdodDogMzVweDtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxuLmlubGluZS0yIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uY29sb3Ige1xuICBhbmltYXRpb246IGNvbCAxcyBsaW5lYXIgaW5maW5pdGU7XG59XG5cbkBrZXlmcmFtZXMgY29sIHtcblxuICAwJSxcbiAgNTAlIHtcbiAgICBmaWxsOiAjMDAwMDAwO1xuICAgIHN0cm9rZTogdHJhbnNwYXJlbnQ7XG4gIH1cblxuICA1MSUsXG4gIDEwMCUge1xuICAgIGZpbGw6ICNmZjAwMDA7XG4gICAgc3Ryb2tlOiAjZmYwMDAwO1xuICB9XG59XG5cbi5hZGQtaWNvbi1kaXNwbGF5IHtcbiAgdHJhbnNmb3JtOiBzY2FsZSgxLjUpO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5zZXR0aW5nLWljb24tZGlzcGxheSB7XG4gIG1hcmdpbjogMTBweDtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4uYWN0aW9uLWJ1dHRvbiB7XG4gIG1hcmdpbjogMTBweCAyMHB4OyAvKiBBZGp1c3QgdGhlIHZhbHVlcyBhcyBuZWVkZWQgKi9cbiAgZm9udC1zaXplOiAyMHB4O1xuICBwYWRkaW5nOiAyMHB4O1xufVxuXG4uZXhhbXBsZS1idXR0b24tcm93IHtcbiAgZmxvYXQ6IHJpZ2h0O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+  styles: [".system-group[_ngcontent-%COMP%] > .row[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: nowrap;\n  overflow-x: auto;\n}\n\n.system-group[_ngcontent-%COMP%] > .row[_ngcontent-%COMP%] > .col-md-4[_ngcontent-%COMP%] {\n  flex: 0 0 auto;\n}\n\n\n.content[_ngcontent-%COMP%] {\n  max-width: 1460px;\n}\n\n#header[_ngcontent-%COMP%] {\n  padding-top: 15px;\n  padding-bottom: 15px;\n  background-color: white;\n  word-wrap: normal;\n}\n\n\n.system-group[_ngcontent-%COMP%]   #GroupList[_ngcontent-%COMP%] {\n  font-weight: 600;\n  font-size: 34px;\n  color: black;\n}\n\n\n.system-group[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-weight: 600;\n  font-size: 34px;\n  color: black;\n}\n\n\n#alarm-status[_ngcontent-%COMP%] {\n  display: table;\n  background-color: mistyrose;\n  table-layout: fixed;\n}\n\n\nth[_ngcontent-%COMP%] {\n  position: sticky;\n  top: 0px;\n  \n  background: white;\n}\n\n\n.header-font[_ngcontent-%COMP%] {\n  font-size: 22px;\n  font-weight: 600;\n}\n\n\n.content-text[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n\n#system[_ngcontent-%COMP%] {\n  display: table;\n  width: 260px; \n  \n  table-layout: fixed;\n}\n\n\n#system[_ngcontent-%COMP%]   th[_ngcontent-%COMP%] {\n  display: block;\n  position: sticky;\n  top: -2px;\n  \n  border: 0px;\n  z-index: 1;\n  \n  \n}\n\n#system[_ngcontent-%COMP%]   th[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  font-size: 22px;\n  font-weight: 700;\n  height: 50px;\n}\n\n\n#system[_ngcontent-%COMP%]   tr[_ngcontent-%COMP%] {\n  display: table-cell;\n  width: 260px;\n  vertical-align: top;\n}\n\n\n\n\n#system[_ngcontent-%COMP%]   tr[_ngcontent-%COMP%] {\n  border-left: 1px solid lightgray;\n  border-right: 1px solid lightgray;\n}\n\nspan[_ngcontent-%COMP%] {\n  text-align: start;\n  display: inline-block;\n  width: 100%;\n}\n\n.container[_ngcontent-%COMP%] {\n  padding: 0px;\n  margin: 15px;\n}\n\n.alarm-card[_ngcontent-%COMP%] {\n  width: 100%;\n  display: flex;\n  padding-left: 0px;\n  padding-right: 0px;\n  margin: 12px auto 0px auto;\n}\n\n.alarm-status-body[_ngcontent-%COMP%] {\n  flex-grow: 1;\n}\n\n.alarm-status-time[_ngcontent-%COMP%] {\n  margin: auto 5px auto 15px;\n}\n\n\n.menu-btn[_ngcontent-%COMP%] {\n  color: white;\n  margin: auto;\n}\n\nh5[_ngcontent-%COMP%] {\n  display: inline-block;\n  vertical-align: baseline;\n}\n\n\n.to-top[_ngcontent-%COMP%] {\n  bottom: 0;\n  cursor: pointer;\n  margin: 0 8px 12px 0;\n  position: fixed;\n  right: 0;\n  text-align: center;\n}\n\n.show-scrollTop[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: all 0.2s ease-in-out;\n}\n\n\n.inline-1[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin-right: 35px;\n  vertical-align: middle;\n}\n\n.inline-2[_ngcontent-%COMP%] {\n  display: inline-block;\n  vertical-align: middle;\n}\n\n.color[_ngcontent-%COMP%] {\n  animation: _ngcontent-%COMP%_col 1s linear infinite;\n}\n\n@keyframes _ngcontent-%COMP%_col {\n\n  0%,\n  50% {\n    fill: #000000;\n    stroke: transparent;\n  }\n\n  51%,\n  100% {\n    fill: #ff0000;\n    stroke: #ff0000;\n  }\n}\n\n.add-icon-display[_ngcontent-%COMP%] {\n  transform: scale(1.5);\n  color: white;\n}\n\n.setting-icon-display[_ngcontent-%COMP%] {\n  margin: 10px;\n  color: black;\n}\n\n.action-button[_ngcontent-%COMP%] {\n  margin: 10px 4px; \n  font-size: 16px;\n  padding: 20px;\n}\n\n.example-button-row[_ngcontent-%COMP%] {\n  float: right;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvYWRtaW4vYWRtaW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQSw2REFBNkQ7QUFDN0Q7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsb0JBQW9CO0VBQ3BCLHVCQUF1QjtFQUN2QixpQkFBaUI7QUFDbkI7O0FBRUEsbUJBQW1CO0FBQ25CO0VBQ0UsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUEsY0FBYztBQUNkO0VBQ0UsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUEsa0NBQWtDO0FBQ2xDO0VBQ0UsY0FBYztFQUNkLDJCQUEyQjtFQUMzQixtQkFBbUI7QUFDckI7O0FBRUEsOEJBQThCO0FBQzlCO0VBQ0UsZ0JBQWdCO0VBQ2hCLFFBQVE7RUFDUiw4REFBOEQ7RUFDOUQsaUJBQWlCO0FBQ25COztBQUVBLGlDQUFpQztBQUNqQztFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBRUEsNEJBQTRCO0FBQzVCO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQSw2REFBNkQ7QUFDN0Q7RUFDRSxjQUFjO0VBQ2QsWUFBWSxFQUFFLG9CQUFvQjtFQUNsQyxvRUFBb0U7RUFDcEUsbUJBQW1CO0FBQ3JCOztBQUVBLDBCQUEwQjtBQUMxQjtFQUNFLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsU0FBUztFQUNULCtEQUErRDtFQUMvRCxXQUFXO0VBQ1gsVUFBVTtFQUNWLG9EQUFvRDtFQUNwRCxrREFBa0Q7QUFDcEQ7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLFlBQVk7QUFDZDs7QUFFQSxlQUFlO0FBQ2Y7RUFDRSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLG1CQUFtQjtBQUNyQjs7QUFFQSxrRUFBa0U7O0FBRWxFLGVBQWU7QUFDZjtFQUNFLGdDQUFnQztFQUNoQyxpQ0FBaUM7QUFDbkM7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIscUJBQXFCO0VBQ3JCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsMEJBQTBCO0FBQzVCOztBQUVBLHFCQUFxQjtBQUNyQjtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsd0JBQXdCO0FBQzFCOztBQUVBLGNBQWM7QUFDZDtFQUNFLFNBQVM7RUFDVCxlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLGVBQWU7RUFDZixRQUFRO0VBQ1Isa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLGdDQUFnQztBQUNsQzs7QUFFQSxlQUFlO0FBQ2Y7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxpQ0FBaUM7QUFDbkM7O0FBRUE7O0VBRUU7O0lBRUUsYUFBYTtJQUNiLG1CQUFtQjtFQUNyQjs7RUFFQTs7SUFFRSxhQUFhO0lBQ2IsZUFBZTtFQUNqQjtBQUNGOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0IsRUFBRSxnQ0FBZ0M7RUFDbEQsZUFBZTtFQUNmLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFlBQVk7QUFDZCIsInNvdXJjZXNDb250ZW50IjpbIi5zeXN0ZW0tZ3JvdXA+LnJvdyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtd3JhcDogbm93cmFwO1xuICBvdmVyZmxvdy14OiBhdXRvO1xufVxuXG4uc3lzdGVtLWdyb3VwPi5yb3c+LmNvbC1tZC00IHtcbiAgZmxleDogMCAwIGF1dG87XG59XG5cbi8qQ29udGVudCBsZW5ndGguIENlbnRlcmVkIGFsbCBjb250ZW50IGJleW9uZCB0aGlzIG1heC13aWR0aCovXG4uY29udGVudCB7XG4gIG1heC13aWR0aDogMTQ2MHB4O1xufVxuXG4jaGVhZGVyIHtcbiAgcGFkZGluZy10b3A6IDE1cHg7XG4gIHBhZGRpbmctYm90dG9tOiAxNXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgd29yZC13cmFwOiBub3JtYWw7XG59XG5cbi8qQWxhcm1TdGF0dXMgdGV4dCovXG4uc3lzdGVtLWdyb3VwICNHcm91cExpc3Qge1xuICBmb250LXdlaWdodDogNjAwO1xuICBmb250LXNpemU6IDM0cHg7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuLypTeXN0ZW0gdGV4dCovXG4uc3lzdGVtLWdyb3VwIGgxIHtcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgZm9udC1zaXplOiAzNHB4O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi8qIEFsYXJtIFN0YXR1cyB0YWJsZSBhdHRyaWJ1dGVzICovXG4jYWxhcm0tc3RhdHVzIHtcbiAgZGlzcGxheTogdGFibGU7XG4gIGJhY2tncm91bmQtY29sb3I6IG1pc3R5cm9zZTtcbiAgdGFibGUtbGF5b3V0OiBmaXhlZDtcbn1cblxuLyogQWxhcm0gU3RhdHVzIHRhYmxlIGhlYWRlciAqL1xudGgge1xuICBwb3NpdGlvbjogc3RpY2t5O1xuICB0b3A6IDBweDtcbiAgLyogMHB4IGlmIHlvdSBkb24ndCBoYXZlIGEgbmF2YmFyLCBidXQgc29tZXRoaW5nIGlzIHJlcXVpcmVkICovXG4gIGJhY2tncm91bmQ6IHdoaXRlO1xufVxuXG4vKkFsYXJtIFN0YXR1cyB0YWJsZSBoZWFkZXIgdGV4dCovXG4uaGVhZGVyLWZvbnQge1xuICBmb250LXNpemU6IDIycHg7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG59XG5cbi8qQWxhcm0gU3RhdHVzIGNvbnRlbnQgdGV4dCovXG4uY29udGVudC10ZXh0IHtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4vKiBTeXN0ZW0gdGFibGUgYXR0cmlidXRlcy4gTW9kaWZ5IHRoZSB3aWR0aCB3aGVyZSBuZWNlc3NhcnkqL1xuI3N5c3RlbSB7XG4gIGRpc3BsYXk6IHRhYmxlO1xuICB3aWR0aDogMjYwcHg7IC8qd2lkdGggZm9yIG9uZSByb3cqL1xuICAvKiBleHBhbmQgaWYgcm93IG51bWJlciBpbmNyZWFzZXMgKDEzMDAgaXMgZGVmYXVsdCBmb3IgNS1yb3ctdGFibGUpKi9cbiAgdGFibGUtbGF5b3V0OiBmaXhlZDtcbn1cblxuLyp0YWJsZSBoZWFkZXIgYXR0cmlidXRlcyovXG4jc3lzdGVtIHRoIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBzdGlja3k7XG4gIHRvcDogLTJweDtcbiAgLypzZXQgLTIgKG9yIGEgbnVtYmVyIGxlc3MgdGhhbiAwKSBpZiBub3RoaW5nIG9uIHRvcCBvZiBoZWFkZXIqL1xuICBib3JkZXI6IDBweDtcbiAgei1pbmRleDogMTtcbiAgLyptdXN0IGJlIGxhcmdlciB0aGFuIHRoZSB2YWx1ZSBzZXQgaW4gLmRvdC1hbmltYXRlKi9cbiAgLyogbWFyZ2luOiAtMnB4OyB1c2UgdGhpcyB0byBlbGltaW5hdGUgaGVhZGVyIGdhcCovXG59XG5cbiNzeXN0ZW0gdGggaDMge1xuICBmb250LXNpemU6IDIycHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGhlaWdodDogNTBweDtcbn1cblxuLyp0YWJsZSBjb2x1bW4qL1xuI3N5c3RlbSB0ciB7XG4gIGRpc3BsYXk6IHRhYmxlLWNlbGw7XG4gIHdpZHRoOiAyNjBweDtcbiAgdmVydGljYWwtYWxpZ246IHRvcDtcbn1cblxuLyp0YWJsZSBjZWxsICh0ZCksIHBsZWFzZSByZWZlciB0byBlcXVpcG1lbnQtZGV0YWlsLmNvbXBvbmVudC5jc3MqL1xuXG4vKnRhYmxlIGJvcmRlciovXG4jc3lzdGVtIHRyIHtcbiAgYm9yZGVyLWxlZnQ6IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbn1cblxuc3BhbiB7XG4gIHRleHQtYWxpZ246IHN0YXJ0O1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uY29udGFpbmVyIHtcbiAgcGFkZGluZzogMHB4O1xuICBtYXJnaW46IDE1cHg7XG59XG5cbi5hbGFybS1jYXJkIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmctbGVmdDogMHB4O1xuICBwYWRkaW5nLXJpZ2h0OiAwcHg7XG4gIG1hcmdpbjogMTJweCBhdXRvIDBweCBhdXRvO1xufVxuXG4uYWxhcm0tc3RhdHVzLWJvZHkge1xuICBmbGV4LWdyb3c6IDE7XG59XG5cbi5hbGFybS1zdGF0dXMtdGltZSB7XG4gIG1hcmdpbjogYXV0byA1cHggYXV0byAxNXB4O1xufVxuXG4vKm5hdmJhciBtZW51IGJ1dHRvbiovXG4ubWVudS1idG4ge1xuICBjb2xvcjogd2hpdGU7XG4gIG1hcmdpbjogYXV0bztcbn1cblxuaDUge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTtcbn1cblxuLypCYWNrIHRvIHRvcCovXG4udG8tdG9wIHtcbiAgYm90dG9tOiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIG1hcmdpbjogMCA4cHggMTJweCAwO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHJpZ2h0OiAwO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5zaG93LXNjcm9sbFRvcCB7XG4gIG9wYWNpdHk6IDE7XG4gIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2UtaW4tb3V0O1xufVxuXG4vKkFsYXJtIFN0YXR1cyovXG4uaW5saW5lLTEge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbi1yaWdodDogMzVweDtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxuLmlubGluZS0yIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xufVxuXG4uY29sb3Ige1xuICBhbmltYXRpb246IGNvbCAxcyBsaW5lYXIgaW5maW5pdGU7XG59XG5cbkBrZXlmcmFtZXMgY29sIHtcblxuICAwJSxcbiAgNTAlIHtcbiAgICBmaWxsOiAjMDAwMDAwO1xuICAgIHN0cm9rZTogdHJhbnNwYXJlbnQ7XG4gIH1cblxuICA1MSUsXG4gIDEwMCUge1xuICAgIGZpbGw6ICNmZjAwMDA7XG4gICAgc3Ryb2tlOiAjZmYwMDAwO1xuICB9XG59XG5cbi5hZGQtaWNvbi1kaXNwbGF5IHtcbiAgdHJhbnNmb3JtOiBzY2FsZSgxLjUpO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5zZXR0aW5nLWljb24tZGlzcGxheSB7XG4gIG1hcmdpbjogMTBweDtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4uYWN0aW9uLWJ1dHRvbiB7XG4gIG1hcmdpbjogMTBweCA0cHg7IC8qIEFkanVzdCB0aGUgdmFsdWVzIGFzIG5lZWRlZCAqL1xuICBmb250LXNpemU6IDE2cHg7XG4gIHBhZGRpbmc6IDIwcHg7XG59XG5cbi5leGFtcGxlLWJ1dHRvbi1yb3cge1xuICBmbG9hdDogcmlnaHQ7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
 });
 
 /***/ }),
@@ -71186,15 +71186,17 @@ class Equipment {
   }
   submitLampStatus() {
     let lampShortList = [];
-    this.lamp.forEach(lamp => {
-      let lampShort = {
-        lampstatus: lamp.lampStatus,
-        nonc: lamp.dryContactType == 0 ? 'NO' : 'NC',
-        alarm: lamp.alarm,
-        reverse: lamp.reverse
-      };
-      lampShortList.push(lampShort);
-    });
+    if (this.lamp != undefined) {
+      this.lamp.forEach(lamp => {
+        let lampShort = {
+          lampstatus: lamp.lampStatus,
+          nonc: lamp.dryContactType == 0 ? 'NO' : 'NC',
+          alarm: lamp.alarm,
+          reverse: lamp.reverse
+        };
+        lampShortList.push(lampShort);
+      });
+    }
     return lampShortList;
   }
 }
@@ -78347,10 +78349,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/material/divider */ 71528);
 /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/material/button */ 84522);
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/material/card */ 82156);
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/material/form-field */ 75074);
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material/select */ 57371);
-/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/material/core */ 59121);
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/input */ 68562);
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/material/icon */ 57822);
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material/form-field */ 75074);
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/material/select */ 57371);
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/core */ 59121);
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/material/input */ 68562);
 /* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../navbar/navbar.component */ 66313);
 /* harmony import */ var _add_lamp_add_lamp_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./add-lamp/add-lamp.component */ 97489);
 var _class;
@@ -78383,19 +78386,20 @@ var _class;
 
 
 
+
 function AddEquipmentComponent_div_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "div", 27)(1, "a", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "div", 28)(1, "a", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵlistener"]("click", function AddEquipmentComponent_div_2_Template_a_click_1_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵrestoreView"](_r12);
       const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵresetView"](ctx_r11.logout());
     });
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](2, "span", 29);
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](2, "span", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](3, "logout");
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](4, "h2", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](4, "h2", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵpipe"](6, "translate");
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]()()();
@@ -78407,7 +78411,7 @@ function AddEquipmentComponent_div_2_Template(rf, ctx) {
 }
 function AddEquipmentComponent_mat_option_16_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "mat-option", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "mat-option", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
   }
@@ -78460,9 +78464,9 @@ function AddEquipmentComponent_mat_error_62_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
   }
 }
-function AddEquipmentComponent_mat_option_77_Template(rf, ctx) {
+function AddEquipmentComponent_mat_option_81_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "mat-option", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "mat-option", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
   }
@@ -78473,11 +78477,11 @@ function AddEquipmentComponent_mat_option_77_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtextInterpolate"](groupFilter_r14.nameEN);
   }
 }
-function AddEquipmentComponent_button_82_Template(rf, ctx) {
+function AddEquipmentComponent_button_86_Template(rf, ctx) {
   if (rf & 1) {
     const _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "button", 32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵlistener"]("click", function AddEquipmentComponent_button_82_Template_button_click_0_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "button", 33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵlistener"]("click", function AddEquipmentComponent_button_86_Template_button_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵrestoreView"](_r16);
       const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵresetView"](ctx_r15.resetFormData());
@@ -78486,11 +78490,11 @@ function AddEquipmentComponent_button_82_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
   }
 }
-function AddEquipmentComponent_button_83_Template(rf, ctx) {
+function AddEquipmentComponent_button_87_Template(rf, ctx) {
   if (rf & 1) {
     const _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "button", 33);
-    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵlistener"]("click", function AddEquipmentComponent_button_83_Template_button_click_0_listener() {
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "button", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵlistener"]("click", function AddEquipmentComponent_button_87_Template_button_click_0_listener() {
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵrestoreView"](_r18);
       const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵnextContext"]();
       return _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵresetView"](ctx_r17.remove(ctx_r17.device));
@@ -78567,7 +78571,6 @@ class AddEquipmentComponent {
     //get previous navigation
     this.routerExtService.getPreviousUrl().then(value => {
       this.previousUrl = value;
-      console.log('previousUrl', this.previousUrl);
     });
     this.addEquipmentForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormGroup({
       systemId: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl(),
@@ -78577,6 +78580,38 @@ class AddEquipmentComponent {
       floor: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl(),
       designation: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl(),
       groupFilter: new _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControl()
+    });
+    //get session storage here
+    const formJsonString = sessionStorage.getItem('formDetail');
+    console.log('formDetail : ', formJsonString);
+    // const formDetail = {
+    //   systemId: this.f.get('systemId')?.value,
+    //   nameEN: this.f.get('nameEN')?.value,
+    //   nameTC: this.f.get('nameTC')?.value,
+    //   nameSC: this.f.get('nameSC')?.value,
+    //   floor: this.f.get('floor')?.value,
+    //   designation: this.f.get('designation')?.value,
+    //   groupFilter: this.f.get('groupFilter')?.value,
+    // };
+    const formDetail = JSON.parse(formJsonString);
+    if (formDetail != undefined) {
+      this.f.get('systemId')?.setValue(formDetail['systemId']);
+      this.f.get('nameEN')?.setValue(formDetail['nameEN']);
+      this.f.get('nameTC')?.setValue(formDetail['nameTC']);
+      this.f.get('nameSC')?.setValue(formDetail['nameSC']);
+      this.f.get('floor')?.setValue(formDetail['floor']);
+      this.f.get('designation')?.setValue(formDetail['designation']);
+      this.f.get('groupFilter')?.setValue(formDetail['groupFilter']);
+    }
+    //catch any back events for the page (or coming back to this page i.e. Add Group filter)
+    this.routerEventSubscription = this.router.events.subscribe(event => {
+      if (event.navigationTrigger === 'popstate') {
+        // Perform actions
+        console.log('popstate detected');
+        if (event.url == '/equipment-setup') {
+          this.showAlert('nice try : ' + event.url);
+        }
+      }
     });
     //To use "edit", use {queryParams : {'edit':true}} in navigator
     this.edit = this.activatedRoute.snapshot.queryParams['edit'] ?? false;
@@ -78633,6 +78668,7 @@ class AddEquipmentComponent {
     } else {
       this.f.get('systemId').enable();
     }
+    //get group filters
     this.groupFilterList = _system_utils__WEBPACK_IMPORTED_MODULE_5__.SystemUtils.getGroupFilterListFromLocalStorage();
     this.systemList.forEach(system => {
       if (system.id == undefined) {
@@ -78693,13 +78729,6 @@ class AddEquipmentComponent {
     });
   }
   getSystemListFromWebsocket() {
-    // {
-    //   "type": "system_List",
-    //   "content": {
-    //       "username": "String Type",
-    //       "project_ID": "String Type"
-    //       }
-    // }
     let message = {
       type: '',
       content: {}
@@ -78710,6 +78739,14 @@ class AddEquipmentComponent {
       project_ID: 'String Type'
     };
     this.websocketService.messages.next(message);
+  }
+  ngOnDestroy() {
+    if (!this.saveEquipmentForm) {
+      //remove saved form detail
+      sessionStorage.removeItem("formDetail");
+    }
+    //unsubscribe the router events
+    this.routerEventSubscription.unsubscribe();
   }
   changeSiteLanguage(localeCode) {
     const selectedLanguage = this.languageList.find(language => language.code === localeCode)?.label.toString();
@@ -78738,20 +78775,43 @@ class AddEquipmentComponent {
         if (result['reset'] == true) {
           this.f.reset();
         } else if (result['path'] != null) {
-          if (this.previousUrl == '/admin' || this.previousUrl == '/equipment-setup') {
-            // Navigating to a new page ('/system-list') and replacing the current page ('/system-setup')
+          if (this.previousUrl == '/list-equipment') {
+            //go back
+            this.location.back();
+          } else {
+            //Navigating to a new page ('/list-equipment') and replacing the current page ('/equipment-setup')
             this.router.navigateByUrl(result['path'], {
               replaceUrl: true
             });
-          } else {
-            //Navigate back to previous page ('/system-list')
-            this.location.back();
           }
         }
       }
     });
   }
+  showAlert(msg) {
+    alert(msg);
+  }
+  saveEquipmentInputs() {
+    const formDetail = {
+      systemId: this.f.get('systemId')?.value,
+      nameEN: this.f.get('nameEN')?.value,
+      nameTC: this.f.get('nameTC')?.value,
+      nameSC: this.f.get('nameSC')?.value,
+      floor: this.f.get('floor')?.value,
+      designation: this.f.get('designation')?.value,
+      groupFilter: this.f.get('groupFilter')?.value
+    };
+    sessionStorage.setItem('formDetail', JSON.stringify(formDetail));
+  }
+  goToGroupfilter() {
+    //save the input form detail when user add group filter
+    this.saveEquipmentForm = true;
+    this.saveEquipmentInputs();
+    this.router.navigateByUrl('/add-group-filter');
+  }
   submitEquipment(options) {
+    //saved inputs in case of network failure. Can recover after 
+    this.saveEquipmentInputs();
     let message = {
       type: '',
       content: {}
@@ -78772,7 +78832,7 @@ class AddEquipmentComponent {
           name_EN: options.equipment.name_EN,
           name_CN: options.equipment.name_CN,
           name_SC: options.equipment.name_SC,
-          lamp: options.equipment.submitLampStatus(),
+          lamp: options.equipment.lamp ? options.equipment.submitLampStatus() : [],
           group: options.equipment.groupFilterIds
         }
       };
@@ -78790,7 +78850,7 @@ class AddEquipmentComponent {
           name_EN: options.equipment.name_EN,
           name_CN: options.equipment.name_CN,
           name_SC: options.equipment.name_SC,
-          lamp: options.equipment.submitLampStatus(),
+          lamp: options.equipment.lamp ? options.equipment.submitLampStatus() : [],
           group: options.equipment.groupFilterIds
         }
       };
@@ -78963,6 +79023,7 @@ class AddEquipmentComponent {
   }
   resetFormData() {
     this.lampDataList = [];
+    sessionStorage.removeItem('formDetail');
     this.f.reset();
   }
   getSystemPlaceholder() {
@@ -79042,9 +79103,9 @@ _class.ɵfac = function AddEquipmentComponent_Factory(t) {
 _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineComponent"]({
   type: _class,
   selectors: [["app-add-equipment"]],
-  decls: 84,
+  decls: 88,
   vars: 15,
-  consts: [[2, "background", "lightblue"], ["pageTitle", "Add Equipment", 3, "backBtnClicked", "langChanged"], ["fxShow", "true", "fxHide.gt-sm", "true", 4, "ngIf"], [2, "padding", "15px", "background", "lightblue"], [3, "formGroup", "ngSubmit"], [1, "row"], [1, "border-box", "col-xl-4", "col-md-6", "col-sm-12"], [1, "card"], ["appearance", "outline", 2, "width", "100%"], ["formControlName", "systemId"], [3, "value", 4, "ngFor", "ngForOf"], [4, "ngIf"], ["appearance", "outline", 2, "width", "35vh"], ["matInput", "", "placeholder", "", "formControlName", "floor"], [1, "card-divider"], ["matInput", "", "placeholder", "", "formControlName", "designation"], ["matInput", "", "placeholder", "Name of the equipment", "formControlName", "nameEN"], ["matInput", "", "placeholder", "\u88DD\u7F6E\u540D\u7A31", "formControlName", "nameTC"], [2, "margin-left", "10px"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)", 3, "click"], ["matInput", "", "placeholder", "\u88C5\u7F6E\u540D\u79F0", "formControlName", "nameSC"], [3, "lampDataList", "updateLampData"], ["formControlName", "groupFilter", "multiple", ""], [1, "row", 2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["type", "submit", "mat-raised-button", "", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px"], ["type", "button", "mat-raised-button", "", "style", "\n                font-size: 20px;\n                width: 20%;\n                height: 50px;\n                margin-left: 10px;\n              ", "color", "accent", 3, "click", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "style", "\n                font-size: 20px;\n                width: 20%;\n                height: 50px;\n                margin-left: 10px;\n              ", "color", "warn", 3, "click", 4, "ngIf"], ["fxShow", "true", "fxHide.gt-sm", "true"], ["mat-button", "", 3, "click"], [1, "material-icons", 2, "transform", "scale(1.2)", "margin-right", "5px", "color", "white"], [1, "menu-btn"], [3, "value"], ["type", "button", "mat-raised-button", "", "color", "accent", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"], ["type", "button", "mat-raised-button", "", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
+  consts: [[2, "background", "lightblue"], ["pageTitle", "Add Equipment", 3, "backBtnClicked", "langChanged"], ["fxShow", "true", "fxHide.gt-sm", "true", 4, "ngIf"], [2, "padding", "15px", "background", "lightblue"], [3, "formGroup", "ngSubmit"], [1, "row"], [1, "border-box", "col-xl-4", "col-md-6", "col-sm-12"], [1, "card"], ["appearance", "outline", 2, "width", "100%"], ["formControlName", "systemId"], [3, "value", 4, "ngFor", "ngForOf"], [4, "ngIf"], ["appearance", "outline", 2, "width", "35vh"], ["matInput", "", "placeholder", "", "formControlName", "floor"], [1, "card-divider"], ["matInput", "", "placeholder", "", "formControlName", "designation"], ["matInput", "", "placeholder", "Name of the equipment", "formControlName", "nameEN"], ["matInput", "", "placeholder", "\u88DD\u7F6E\u540D\u7A31", "formControlName", "nameTC"], [2, "margin-left", "10px"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)", 3, "click"], ["matInput", "", "placeholder", "\u88C5\u7F6E\u540D\u79F0", "formControlName", "nameSC"], [3, "lampDataList", "updateLampData"], ["type", "button", "mat-stroked-button", "", 2, "width", "100%", "margin-bottom", "15px", 3, "click"], ["formControlName", "groupFilter", "multiple", ""], [1, "row", 2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["type", "submit", "mat-raised-button", "", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px"], ["type", "button", "mat-raised-button", "", "style", "\n                  font-size: 20px;\n                  width: 20%;\n                  height: 50px;\n                  margin-left: 10px;\n                ", "color", "accent", 3, "click", 4, "ngIf"], ["type", "button", "mat-raised-button", "", "style", "\n                  font-size: 20px;\n                  width: 20%;\n                  height: 50px;\n                  margin-left: 10px;\n                ", "color", "warn", 3, "click", 4, "ngIf"], ["fxShow", "true", "fxHide.gt-sm", "true"], ["mat-button", "", 3, "click"], [1, "material-icons", 2, "transform", "scale(1.2)", "margin-right", "5px", "color", "white"], [1, "menu-btn"], [3, "value"], ["type", "button", "mat-raised-button", "", "color", "accent", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"], ["type", "button", "mat-raised-button", "", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
   template: function AddEquipmentComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](0, "body", 0)(1, "app-navbar", 1);
@@ -79129,17 +79190,26 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdef
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](70, "h3");
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](71, "Group Filter");
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](72, "p")(73, "mat-form-field", 8)(74, "mat-label");
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](75);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](72, "button", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵlistener"]("click", function AddEquipmentComponent_Template_button_click_72_listener() {
+        return ctx.goToGroupfilter();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](73, "mat-icon");
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](74, "add");
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](76, "mat-select", 22);
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtemplate"](77, AddEquipmentComponent_mat_option_77_Template, 2, 2, "mat-option", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](75, " Add Group Filter ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](76, "p")(77, "mat-form-field", 8)(78, "mat-label");
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](79);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](80, "mat-select", 23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtemplate"](81, AddEquipmentComponent_mat_option_81_Template, 2, 2, "mat-option", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](78, "section")(79, "div", 23)(80, "button", 24);
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](81, " Submit ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementStart"](82, "section")(83, "div", 24)(84, "button", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtext"](85, " Submit ");
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtemplate"](82, AddEquipmentComponent_button_82_Template, 2, 0, "button", 25);
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtemplate"](83, AddEquipmentComponent_button_83_Template, 2, 0, "button", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtemplate"](86, AddEquipmentComponent_button_86_Template, 2, 0, "button", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtemplate"](87, AddEquipmentComponent_button_87_Template, 2, 0, "button", 27);
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵelementEnd"]()()()()()()();
     }
     if (rf & 2) {
@@ -79165,7 +79235,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdef
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵproperty"]("ngIf", ctx.f.get("nameSC").hasError("required"));
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵadvance"](6);
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵproperty"]("lampDataList", ctx.lampDataList);
-      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵadvance"](7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵadvance"](11);
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵtextInterpolate"](ctx.getGroupFilterPlaceholder());
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵadvance"](2);
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵproperty"]("ngForOf", ctx.filterBySystem(ctx.groupFilterList));
@@ -79175,7 +79245,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdef
       _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵproperty"]("ngIf", ctx.edit);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_19__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_19__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_16__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_16__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControlName, _angular_material_divider__WEBPACK_IMPORTED_MODULE_21__.MatDivider, _angular_material_button__WEBPACK_IMPORTED_MODULE_22__.MatAnchor, _angular_material_button__WEBPACK_IMPORTED_MODULE_22__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_23__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_23__.MatCardContent, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_24__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_24__.MatLabel, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_24__.MatError, _angular_material_select__WEBPACK_IMPORTED_MODULE_25__.MatSelect, _angular_material_core__WEBPACK_IMPORTED_MODULE_26__.MatOption, _angular_material_input__WEBPACK_IMPORTED_MODULE_27__.MatInput, _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__.NavbarComponent, _add_lamp_add_lamp_component__WEBPACK_IMPORTED_MODULE_14__.AddLampComponent, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_17__.TranslatePipe],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_19__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_19__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_16__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_16__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.FormControlName, _angular_material_divider__WEBPACK_IMPORTED_MODULE_21__.MatDivider, _angular_material_button__WEBPACK_IMPORTED_MODULE_22__.MatAnchor, _angular_material_button__WEBPACK_IMPORTED_MODULE_22__.MatButton, _angular_material_card__WEBPACK_IMPORTED_MODULE_23__.MatCard, _angular_material_card__WEBPACK_IMPORTED_MODULE_23__.MatCardContent, _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__.MatIcon, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatLabel, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_25__.MatError, _angular_material_select__WEBPACK_IMPORTED_MODULE_26__.MatSelect, _angular_material_core__WEBPACK_IMPORTED_MODULE_27__.MatOption, _angular_material_input__WEBPACK_IMPORTED_MODULE_28__.MatInput, _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__.NavbarComponent, _add_lamp_add_lamp_component__WEBPACK_IMPORTED_MODULE_14__.AddLampComponent, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_17__.TranslatePipe],
   styles: [".add-icon-display[_ngcontent-%COMP%] {\n    transform: scale(1.5);\n    color: white;\n}\n\n\n.menu-btn[_ngcontent-%COMP%] {\n    color: white;\n    margin: auto;\n}\n\n\n.description[_ngcontent-%COMP%] {\n    resize: none;\n}\n\n.card[_ngcontent-%COMP%] {\n    margin-bottom: 10px;\n}\n\n.card-divider[_ngcontent-%COMP%] {\n    margin-bottom: 15px;\n}\n\n.toggle-lamp-status[_ngcontent-%COMP%] {\n    margin-bottom: 5px;\n    font-size: 18px;\n    justify-content: center;\n    align-items: center;\n    display: flex;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvc3lzdGVtL2FkZC1lcXVpcG1lbnQvYWRkLWVxdWlwbWVudC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQSxtQkFBbUI7QUFDbkI7SUFDSSxxQkFBcUI7SUFDckIsWUFBWTtBQUNoQjs7QUFFQSxxQkFBcUI7QUFDckI7SUFDSSxZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFFQSx1QkFBdUI7QUFDdkI7SUFDSSxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGFBQWE7QUFDakIiLCJzb3VyY2VzQ29udGVudCI6WyJcbi8qbmF2YmFyIG1lbnUgaWNvbiovXG4uYWRkLWljb24tZGlzcGxheSB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjUpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cblxuLypuYXZiYXIgbWVudSBidXR0b24qL1xuLm1lbnUtYnRuIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgbWFyZ2luOiBhdXRvO1xufVxuXG4vKmRlc2NyaXB0aW9uIHRleHRhcmVhKi9cbi5kZXNjcmlwdGlvbiB7XG4gICAgcmVzaXplOiBub25lO1xufVxuXG4uY2FyZCB7XG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cblxuLmNhcmQtZGl2aWRlciB7XG4gICAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cblxuLnRvZ2dsZS1sYW1wLXN0YXR1cyB7XG4gICAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGRpc3BsYXk6IGZsZXg7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
 });
 
@@ -79553,8 +79623,11 @@ class AddLampComponent {
       minWidth: '500px',
       autoFocus: false
     });
+    if (this.lampDataList == undefined) {
+      this.lampDataList = [];
+    }
     this.dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      // console.log(`Dialog result: ${result}`);
       if (result != null) {
         const lampData = result;
         this.lampDataList.push(lampData);
@@ -79919,7 +79992,7 @@ class AddSystemComponent {
       this.currentLanguage = translate.currentLang;
       console.log('currentLanguage', this.currentLanguage);
     }
-    console.log("production? : " + src_environments_environment__WEBPACK_IMPORTED_MODULE_6__.environment.production);
+    console.log('production? : ' + src_environments_environment__WEBPACK_IMPORTED_MODULE_6__.environment.production);
     this.isDev = !src_environments_environment__WEBPACK_IMPORTED_MODULE_6__.environment.production;
     websocketService.reconnect();
     console.log('++++++++ reconnect websocket +++++++++');
@@ -79927,8 +80000,8 @@ class AddSystemComponent {
       console.log('[add-system] Response from websocket: ' + msg);
       if (src_app_message__WEBPACK_IMPORTED_MODULE_5__.MessageUtils.isJsonString(msg.toString())) {
         var jObject = JSON.parse(msg.toString());
-        if (jObject.type == "system_DetailEditing_Result") {
-          if (jObject.content['result'] == "Success") {
+        if (jObject.type == 'system_DetailEditing_Result') {
+          if (jObject.content['result'] == 'Success') {
             if (this.system == null) {
               this.openSubmittedDialog();
             } else {
@@ -79949,14 +80022,19 @@ class AddSystemComponent {
     });
     //form validation
     this.myForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormGroup({
-      // nameEN: new FormControl('', Validators.required), //check automatically but validate even changing fields
-      // nameTC: new FormControl('', Validators.required),
-      // nameSC: new FormControl('', Validators.required),
       nameEN: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormControl(''),
       nameTC: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormControl(''),
       nameSC: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormControl('')
-      // Add more form controls as needed
     });
+    //get session storage here
+    const formJsonString = sessionStorage.getItem('systemFormDetail');
+    console.log('systemFormDetail : ', formJsonString);
+    if (formJsonString != null) {
+      const formDetail = JSON.parse(formJsonString);
+      this.myForm.get('nameEN')?.setValue(formDetail.nameEN);
+      this.myForm.get('nameTC')?.setValue(formDetail.nameTC);
+      this.myForm.get('nameSC')?.setValue(formDetail.nameSC);
+    }
     //To use "edit", use {queryParams : {'edit':true}} in navigator
     this.edit = this.activatedRoute.snapshot.queryParams['edit'] ?? false;
     console.log('edit :', this.edit);
@@ -79976,6 +80054,7 @@ class AddSystemComponent {
   }
   ngOnDestroy() {
     this.sharedService.isEditSystem = false;
+    sessionStorage.removeItem('systemFormDetail');
   }
   changeSiteLanguage(localeCode) {
     const selectedLanguage = this.languageList.find(language => language.code === localeCode)?.label.toString();
@@ -79990,6 +80069,10 @@ class AddSystemComponent {
       console.log('currentLanguage', this.currentLanguage);
     }, 300);
   }
+  reset() {
+    this.myForm.reset();
+    sessionStorage.removeItem("systemFormDetail");
+  }
   openSubmittedDialog() {
     this.dialogRef = this.dialog.open(_add_system_submit_dialog_add_system_submit_dialog_component__WEBPACK_IMPORTED_MODULE_0__.AddSystemSubmitDialogComponent, {
       width: '450px'
@@ -80000,14 +80083,14 @@ class AddSystemComponent {
         if (result['reset'] == true) {
           this.myForm.reset();
         } else if (result['path'] != null) {
-          if (this.previousUrl == '/admin') {
+          if (this.previousUrl == '/system-list') {
+            // go back
+            this.location.back();
+          } else {
             // Navigating to a new page ('/system-list') and replacing the current page ('/system-setup')
             this.router.navigateByUrl(result['path'], {
               replaceUrl: true
             });
-          } else {
-            //Navigate back to previous page ('/system-list')
-            this.location.back();
           }
         }
       }
@@ -80037,12 +80120,12 @@ class AddSystemComponent {
     //     }
     //   ]
     // }
-    message.type = "system_DetailEditing_Result";
+    message.type = 'system_DetailEditing_Result';
     message.content = {
-      "username": "usr",
-      "result": "Success",
-      "order": 1,
-      "system_ID": "system-id-1"
+      username: 'usr',
+      result: 'Success',
+      order: 1,
+      system_ID: 'system-id-1'
     };
     this.websocketService.messages.next(message);
   }
@@ -80069,20 +80152,26 @@ class AddSystemComponent {
     console.log(this.myForm.get('nameEN')?.value);
     console.log(this.myForm.get('nameTC')?.value);
     console.log(this.myForm.get('nameSC')?.value);
+    const formDetail = {
+      nameEN: this.myForm.get('nameEN')?.value,
+      nameTC: this.myForm.get('nameTC')?.value,
+      nameSC: this.myForm.get('nameSC')?.value
+    };
+    sessionStorage.setItem('systemFormDetail', JSON.stringify(formDetail));
     //custom validation
-    if (this.myForm.get('nameEN')?.value == "" || this.myForm.get('nameEN')?.value == null) {
+    if (this.myForm.get('nameEN')?.value == '' || this.myForm.get('nameEN')?.value == null) {
       this.myForm.get('nameEN')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.myForm.get('nameTC')?.value == "" || this.myForm.get('nameTC')?.value == null) {
+    if (this.myForm.get('nameTC')?.value == '' || this.myForm.get('nameTC')?.value == null) {
       this.myForm.get('nameTC')?.setErrors({
-        'required': true
+        required: true
       });
     }
-    if (this.myForm.get('nameSC')?.value == "" || this.myForm.get('nameSC')?.value == null) {
+    if (this.myForm.get('nameSC')?.value == '' || this.myForm.get('nameSC')?.value == null) {
       this.myForm.get('nameSC')?.setErrors({
-        'required': true
+        required: true
       });
     }
     if (this.myForm.invalid) {
@@ -80128,11 +80217,11 @@ class AddSystemComponent {
     //   "update_time" : updateTime,
     //   "systems": systemsArr,
     // }
-    message.type = "system_DetailEditing";
+    message.type = 'system_DetailEditing';
     if (this.system == null) {
       //Submit new system through websocket
       message.content = {
-        action: "create",
+        action: 'create',
         username: this.userService.getUsername(),
         project_ID: projectId,
         update_time: this.updateTime,
@@ -80145,7 +80234,7 @@ class AddSystemComponent {
     } else {
       //Submit edit system through websocket
       message.content = {
-        action: "edit",
+        action: 'edit',
         system_ID: this.system.id,
         username: this.userService.getUsername(),
         project_ID: projectId,
@@ -80222,7 +80311,7 @@ _class.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdef
   selectors: [["app-add-system"]],
   decls: 39,
   vars: 7,
-  consts: [[2, "background", "lightblue"], ["pageTitle", "Add System", 3, "backBtnClicked", "langChanged"], ["fxShow", "true", "fxHide.gt-sm", "true", 4, "ngIf"], [2, "padding", "15px", "background", "lightblue"], [3, "formGroup", "ngSubmit"], [1, "col"], [1, "border-box", "col-xl-4", "col-md-6", "col-sm-12", "mx-auto"], [1, "card"], ["appearance", "outline", 2, "width", "35vh"], ["matInput", "", "placeholder", "Name of the equipment", "formControlName", "nameEN"], [4, "ngIf"], ["matInput", "", "placeholder", "\u88DD\u7F6E\u540D\u7A31", "formControlName", "nameTC"], [2, "margin-left", "10px"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)", 3, "click"], ["matInput", "", "placeholder", "\u88C5\u7F6E\u540D\u79F0", "formControlName", "nameSC"], [1, "row", 2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["mat-raised-button", "", "type", "submit", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px"], ["mat-raised-button", "", "type", "reset", "style", "\n                  font-size: 20px;\n                  width: 20%;\n                  height: 50px;\n                  margin-left: 10px;\n                ", "color", "accent", 4, "ngIf"], ["mat-raised-button", "", "type", "button", "style", "\n                  font-size: 20px;\n                  width: 20%;\n                  height: 50px;\n                  margin-left: 10px;\n                ", "color", "warn", 3, "click", 4, "ngIf"], ["fxShow", "true", "fxHide.gt-sm", "true"], ["mat-button", "", 3, "click"], [1, "material-icons", 2, "transform", "scale(1.2)", "margin-right", "5px", "color", "white"], [1, "menu-btn"], ["mat-raised-button", "", "type", "reset", "color", "accent", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px"], ["mat-raised-button", "", "type", "button", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
+  consts: [[2, "background", "lightblue"], ["pageTitle", "Add System", 3, "backBtnClicked", "langChanged"], ["fxShow", "true", "fxHide.gt-sm", "true", 4, "ngIf"], [2, "padding", "15px", "background", "lightblue"], [3, "formGroup", "ngSubmit"], [1, "col"], [1, "border-box", "col-xl-4", "col-md-6", "col-sm-12", "mx-auto"], [1, "card"], ["appearance", "outline", 2, "width", "35vh"], ["matInput", "", "placeholder", "Name of the equipment", "formControlName", "nameEN"], [4, "ngIf"], ["matInput", "", "placeholder", "\u88DD\u7F6E\u540D\u7A31", "formControlName", "nameTC"], [2, "margin-left", "10px"], ["type", "button", "mat-button", "", 2, "border-color", "transparent", "border-radius", "5px", "box-shadow", "2px 2px 4px rgba(0, 0, 0, 0.2)", 3, "click"], ["matInput", "", "placeholder", "\u88C5\u7F6E\u540D\u79F0", "formControlName", "nameSC"], [1, "row", 2, "margin-top", "35px", "display", "flex", "align-items", "center", "justify-content", "center"], ["mat-raised-button", "", "type", "submit", "color", "primary", 2, "font-size", "20px", "width", "60%", "height", "50px"], ["mat-raised-button", "", "type", "button", "style", "\n                  font-size: 20px;\n                  width: 20%;\n                  height: 50px;\n                  margin-left: 10px;\n                ", "color", "accent", "click", "reset()", 4, "ngIf"], ["mat-raised-button", "", "type", "button", "style", "\n                  font-size: 20px;\n                  width: 20%;\n                  height: 50px;\n                  margin-left: 10px;\n                ", "color", "warn", 3, "click", 4, "ngIf"], ["fxShow", "true", "fxHide.gt-sm", "true"], ["mat-button", "", 3, "click"], [1, "material-icons", 2, "transform", "scale(1.2)", "margin-right", "5px", "color", "white"], [1, "menu-btn"], ["mat-raised-button", "", "type", "button", "color", "accent", "click", "reset()", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px"], ["mat-raised-button", "", "type", "button", "color", "warn", 2, "font-size", "20px", "width", "20%", "height", "50px", "margin-left", "10px", 3, "click"]],
   template: function AddSystemComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "body", 0)(1, "app-navbar", 1);
@@ -80716,9 +80805,9 @@ class EquipmentUtils {
     return JSON.parse(localStorage.getItem('device-list')) ?? [];
   }
   static saveListToLocalStorage(equipmentsArr) {
-    equipmentsArr.forEach(equipment => {
-      console.log("EN:", equipment.nameEN, "; TC:", equipment.nameTC, "; CN:", equipment.nameSC, "; order:", equipment.order);
-    });
+    // equipmentsArr.forEach(equipment => {
+    //     console.log("EN:",equipment.nameEN,"; TC:",equipment.nameTC,"; CN:",equipment.nameSC,"; order:",equipment.order);
+    //   });
     localStorage.setItem('device-list', JSON.stringify(equipmentsArr));
   }
   //1. get equipment setting
@@ -81082,6 +81171,16 @@ class AddGroupFilterComponent {
       nameTC: new _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormControl(''),
       nameSC: new _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormControl('')
     });
+    //get session storage here
+    const formJsonString = sessionStorage.getItem('groupFormDetail');
+    console.log('groupFormDetail : ', formJsonString);
+    if (formJsonString != null) {
+      const formDetail = JSON.parse(formJsonString);
+      this.myForm.get('systemId')?.setValue(formDetail.systemId);
+      this.myForm.get('nameEN')?.setValue(formDetail.nameEN);
+      this.myForm.get('nameTC')?.setValue(formDetail.nameTC);
+      this.myForm.get('nameSC')?.setValue(formDetail.nameSC);
+    }
     //To use "edit", use {queryParams : {'edit':true}} in navigator
     this.edit = this.activatedRoute.snapshot.queryParams['edit'] ?? false;
     console.log('edit :', this.edit);
@@ -81148,6 +81247,7 @@ class AddGroupFilterComponent {
   }
   ngOnDestroy() {
     this.sharedService.isEditSystem = false;
+    sessionStorage.removeItem('groupFormDetail');
   }
   changeSiteLanguage(localeCode) {
     const selectedLanguage = this.languageList.find(language => language.code === localeCode)?.label.toString();
@@ -81172,13 +81272,16 @@ class AddGroupFilterComponent {
         if (result['reset'] == true) {
           this.myForm.reset();
         } else if (result['path'] != null) {
-          if (this.previousUrl == '/admin') {
-            // Navigating to a new page ('/system-list') and replacing the current page ('/system-setup')
+          if (this.previousUrl == '/equipment-setup') {
+            // go back
+            this.location.back();
+          } else if (this.previousUrl == '/add-group-filter') {
+            // Navigating to a new page ('/group-filter-list') and replacing the current page ('/add-group-filter')
             this.router.navigateByUrl(result['path'], {
               replaceUrl: true
             });
           } else {
-            //Navigate back to previous page ('/system-list')
+            // go back
             this.location.back();
           }
         }
@@ -81256,17 +81359,25 @@ class AddGroupFilterComponent {
     };
     message.type = 'group_DetailEditing_Result';
     message.content = {
-      "username": this.userService.getUsername(),
-      "result": "Success",
-      "order": 1,
-      "system_ID": "system-1"
+      username: this.userService.getUsername(),
+      result: 'Success',
+      order: 1,
+      system_ID: 'system-1'
     };
     this.websocketService.messages.next(message);
   }
   submitForm() {
+    //save group filter inputs
     console.log(this.myForm.get('nameEN')?.value);
     console.log(this.myForm.get('nameTC')?.value);
     console.log(this.myForm.get('nameSC')?.value);
+    const formDetail = {
+      nameEN: this.myForm.get('nameEN')?.value,
+      nameTC: this.myForm.get('nameTC')?.value,
+      nameSC: this.myForm.get('nameSC')?.value,
+      systemId: this.myForm.get('systemId')?.value
+    };
+    sessionStorage.setItem('groupFormDetail', JSON.stringify(formDetail));
     //custom validation
     if (this.myForm.get('nameEN')?.value == '' || this.myForm.get('nameEN')?.value == null) {
       this.myForm.get('nameEN')?.setErrors({
@@ -81320,25 +81431,14 @@ class AddGroupFilterComponent {
       });
     }
     _system_utils__WEBPACK_IMPORTED_MODULE_3__.SystemUtils.saveGroupFilterListToLocalStorage(groupFilterArray);
-    // if (this.groupFilter == null) {
-    //   this.openSubmittedDialog();
-    // } else {
-    //   this.location.back();
-    // }
   }
-  // getListFromLocalStorage() {
-  //   return JSON.parse(localStorage.getItem('syst555%em-list')) ?? [];
-  // }
-  // saveListToLocalStorage(systemsArr: SampleSystemData[]) {
-  //   localStorage.setItem('system-list', JSON.stringify(systemsArr));
-  // }
   remove(selectedFilter) {
     this.confirmDialogRef = this.dialog.open(_confirm_delete_system_dialog_confirm_delete_system_dialog_component__WEBPACK_IMPORTED_MODULE_2__.ConfirmDeleteSystemDialogComponent, {
       width: '450px',
       data: 'group filter'
     });
     this.confirmDialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      // console.log(`Dialog result: ${result}`);
       if (result != null && result['confirm'] == true) {
         let groupFilterArr = _system_utils__WEBPACK_IMPORTED_MODULE_3__.SystemUtils.getGroupFilterListFromLocalStorage();
         const index = groupFilterArr.findIndex(groupFilter => groupFilter.id === selectedFilter.id);
@@ -81586,12 +81686,12 @@ class GroupFilterListComponent {
   //   this.devices = EquipmentUtils.reassignOrder(deviceList);
   // }
   setLanguage(translate) {
-    let savedLang = localStorage.getItem("LANG");
+    let savedLang = localStorage.getItem('LANG');
     if (savedLang != null) {
       this.siteLanguage = savedLang;
       translate.use(savedLang);
       this.currentLanguage = translate.currentLang;
-      console.log("currentLanguage", this.currentLanguage);
+      console.log('currentLanguage', this.currentLanguage);
     }
   }
   getSystemName(systemId) {
@@ -81599,25 +81699,13 @@ class GroupFilterListComponent {
     if (system) {
       return system.nameEN;
     }
-    return "*Unclassfied";
+    return '*Unclassfied';
   }
   getGroupFiltersFromLocalStorage() {
     //retrieve the list from local storage
-    // let systemString = localStorage.getItem('system-list');
-    // if (systemString == null) {
-    // let serializedString = JSON.stringify(this.preloadSystems);
-    // localStorage.setItem("system-list", serializedString);
-    // }
     let index = 0;
     this.groupFilterList = _system_utils__WEBPACK_IMPORTED_MODULE_0__.SystemUtils.getGroupFilterListFromLocalStorage();
-    // if (systemString) {
-    // systemArr = JSON.parse(systemString);
-    // this.sortArray(deviceArr);
-    // }
-    console.log("length:", this.groupFilterList.length);
-    // this.devices.forEach(equipment => {
-    //   console.log("EN:",equipment.nameEN,"; TC:",equipment.nameTC,"; CN:",equipment.nameSC,"; order:",equipment.order);
-    // });
+    // console.log("length:",this.groupFilterList.length);
   }
 
   ngOnInit() {
@@ -81631,7 +81719,7 @@ class GroupFilterListComponent {
     if (selectedLanguage) {
       this.siteLanguage = selectedLanguage;
       this.translate.use(localeCode);
-      console.log("localCode", localeCode);
+      console.log('localCode', localeCode);
       localStorage.setItem('LANG', localeCode);
     }
     setTimeout(() => {
@@ -81646,8 +81734,8 @@ class GroupFilterListComponent {
     //TODO: find a better way to pass device data
     console.log('encoded :', JSON.parse(JSON.stringify(groupFilter)));
     this.navigateTo(_add_group_filter_add_group_filter_component__WEBPACK_IMPORTED_MODULE_1__.AddGroupFilterComponent.route, {
-      'edit': true,
-      'groupFilter': JSON.stringify(groupFilter)
+      edit: true,
+      groupFilter: JSON.stringify(groupFilter)
     });
   }
   navigateTo(path, customParams) {
@@ -81661,7 +81749,7 @@ class GroupFilterListComponent {
   }
 }
 _class = GroupFilterListComponent;
-_class.route = "group-filter-list";
+_class.route = 'group-filter-list';
 _class.ɵfac = function GroupFilterListComponent_Factory(t) {
   return new (t || _class)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_7__.Location));
 };
@@ -82124,25 +82212,25 @@ class SystemListComponent {
       label: '简体中文'
     }];
     this.preloadSystems = [new src_app_sample_system_data__WEBPACK_IMPORTED_MODULE_0__.SampleSystemData({
-      nameEN: "EL System",
-      nameTC: "電力系統",
-      nameSC: "电力系统"
+      nameEN: 'EL System',
+      nameTC: '電力系統',
+      nameSC: '电力系统'
     }), new src_app_sample_system_data__WEBPACK_IMPORTED_MODULE_0__.SampleSystemData({
-      nameEN: "PL System",
-      nameTC: "排氣系統",
-      nameSC: "排气系统"
+      nameEN: 'PL System',
+      nameTC: '排氣系統',
+      nameSC: '排气系统'
     }), new src_app_sample_system_data__WEBPACK_IMPORTED_MODULE_0__.SampleSystemData({
-      nameEN: "Fuel Supply System",
-      nameTC: "燃料供給系統",
-      nameSC: "燃料供给系统"
+      nameEN: 'Fuel Supply System',
+      nameTC: '燃料供給系統',
+      nameSC: '燃料供给系统'
     }), new src_app_sample_system_data__WEBPACK_IMPORTED_MODULE_0__.SampleSystemData({
-      nameEN: "MV System",
-      nameTC: "機械通風系統",
-      nameSC: "机械通风系统"
+      nameEN: 'MV System',
+      nameTC: '機械通風系統',
+      nameSC: '机械通风系统'
     }), new src_app_sample_system_data__WEBPACK_IMPORTED_MODULE_0__.SampleSystemData({
-      nameEN: "Water Leakage System",
-      nameTC: "漏水系統",
-      nameSC: "漏水系统"
+      nameEN: 'Water Leakage System',
+      nameTC: '漏水系統',
+      nameSC: '漏水系统'
     })];
     this.systemList = [];
     this.setLanguage(translate);
@@ -82164,34 +82252,22 @@ class SystemListComponent {
     this.systemList = _system_utils__WEBPACK_IMPORTED_MODULE_2__.SystemUtils.reassignOrder(systemList);
   }
   setLanguage(translate) {
-    let savedLang = localStorage.getItem("LANG");
+    let savedLang = localStorage.getItem('LANG');
     if (savedLang != null) {
       this.siteLanguage = savedLang;
       translate.use(savedLang);
       this.currentLanguage = translate.currentLang;
-      console.log("currentLanguage", this.currentLanguage);
+      console.log('currentLanguage', this.currentLanguage);
     }
   }
   getSystemsFromLocalStorage() {
     //retrieve the list from local storage
-    // let systemString = localStorage.getItem('system-list');
-    // if (systemString == null) {
-    // let serializedString = JSON.stringify(this.preloadSystems);
-    // localStorage.setItem("system-list", serializedString);
-    // }
     let index = 0;
     let systemArr = _system_utils__WEBPACK_IMPORTED_MODULE_2__.SystemUtils.getListFromLocalStorage();
-    // if (systemString) {
-    // systemArr = JSON.parse(systemString);
     this.sortArray(systemArr);
-    // }
-    console.log("length:", this.systemList.length);
-    this.systemList.forEach(system => {
-      console.log("EN:", system.nameEN, "; TC:", system.nameTC, "; CN:", system.nameSC, "; order:", system.order);
-    });
   }
   drop(event) {
-    console.log("Swap orders between two items");
+    console.log('Swap orders between two items');
     (0,_angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_5__.moveItemInArray)(this.systemList, event.previousIndex, event.currentIndex);
     //reassign the order in the system object
     this.systemList = _system_utils__WEBPACK_IMPORTED_MODULE_2__.SystemUtils.reassignOrder(this.systemList);
@@ -82202,7 +82278,7 @@ class SystemListComponent {
     if (selectedLanguage) {
       this.siteLanguage = selectedLanguage;
       this.translate.use(localeCode);
-      console.log("localCode", localeCode);
+      console.log('localCode', localeCode);
       localStorage.setItem('LANG', localeCode);
     }
     setTimeout(() => {
@@ -82216,8 +82292,8 @@ class SystemListComponent {
   editSystem(system) {
     //TODO: find a better way to pass system data
     this.navigateTo(_add_system_add_system_component__WEBPACK_IMPORTED_MODULE_1__.AddSystemComponent.route, {
-      'edit': true,
-      'system': JSON.stringify(system)
+      edit: true,
+      system: JSON.stringify(system)
     });
   }
   navigateTo(path, customParams) {
@@ -82234,7 +82310,7 @@ class SystemListComponent {
   }
 }
 _class = SystemListComponent;
-_class.route = "system-list";
+_class.route = 'system-list';
 _class.ɵfac = function SystemListComponent_Factory(t) {
   return new (t || _class)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.Location));
 };
@@ -82303,15 +82379,15 @@ class SystemUtils {
     return JSON.parse(localStorage.getItem('group-filter-list')) ?? [];
   }
   static saveListToLocalStorage(systemsArr) {
-    systemsArr.forEach(system => {
-      console.log("EN:", system.nameEN, "; TC:", system.nameTC, "; CN:", system.nameSC, "; order:", system.order, "id:", system.id);
-    });
+    // systemsArr.forEach(system => {
+    //     console.log("EN:",system.nameEN,"; TC:",system.nameTC,"; CN:",system.nameSC,"; order:",system.order, "id:", system.id);
+    //   });
     localStorage.setItem('system-list', JSON.stringify(systemsArr));
   }
   static saveGroupFilterListToLocalStorage(groupFilterArray) {
-    groupFilterArray.forEach(groupFilter => {
-      console.log("EN:", groupFilter.nameEN, "; TC:", groupFilter.nameTC, "; CN:", groupFilter.nameSC, "; id:", groupFilter.id);
-    });
+    // groupFilterArray.forEach(groupFilter => {
+    //   console.log("EN:",groupFilter.nameEN,"; TC:",groupFilter.nameTC,"; CN:",groupFilter.nameSC,"; id:", groupFilter.id);
+    // });
     localStorage.setItem('group-filter-list', JSON.stringify(groupFilterArray));
   }
   static reassignOrder(srcSystemList) {
