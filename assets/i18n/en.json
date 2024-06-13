@@ -230,5 +230,18 @@
     "required":"This field is required",
     "greater_than_zero":"PLC ID Must be greater than 0",
     "point_range_exceed":"Point value should be within 1-32",
-    "point_already_exists":"Point already exists"
+    "point_already_exists":"Point already exists",
+    "___alert_dialog___":"",
+    "alert_title": "Success",
+    "alert_title_fail": "Request Failed",
+    "update_plc_success": "Update PLC Points Successful!",
+    "update_plc_failed": "Update PLC Points failed!",
+    "upload_data_success": "Upload Data Successful!",
+    "upload_data_failed": "Upload Data Failed!",
+    "change_projectPLC_failed":"Update project setting failed",
+    "reorder_system_success": "System has been reordered",
+    "reorder_equipment_success": "Equipment has been reordered",
+    "new_user_detected": "New user detected",
+    "change_project_request": "Please create a new project",
+    "confirm_ok": "OK"
 }
