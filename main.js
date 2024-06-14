@@ -88794,7 +88794,10 @@ class GroupFilterUtils {
         let system = systemList.find(s => s.system_ID == systemGroup.system_ID);
         return system != null;
       });
-      if (sortedSystemGroups.length !== systemGroups.length) {
+      if (systemGroups.length == 0) {
+        //system group array empty
+        this.writeToLocalStorage(systemGroups);
+      } else if (sortedSystemGroups.length !== systemGroups.length) {
         //any discrepancy found => write to local storage
         this.writeToLocalStorage(sortedSystemGroups);
       }
