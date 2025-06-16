@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AdminComponent": () => (/* binding */ AdminComponent),
 /* harmony export */   "ToasterPosition": () => (/* binding */ ToasterPosition)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../message */ 70948);
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/environments/environment */ 92340);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../constants */ 4854);
@@ -754,6 +754,9 @@ class AdminComponent {
       this._getUserInfo();
     }
     navigation.clearAll();
+    this.sharedService.getUpdateTime().then(_ => {
+      //check console log for update time (first line)
+    });
     //call userLoginPrompt at background; should be called at the beginning of each component
     this.sharedService.setSchedule();
     this.isDummyReturn = sessionStorage.getItem('isDummyReturn') == 'true';
@@ -1408,32 +1411,31 @@ class AdminComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      console.log("cool");
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    //Production only
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        console.log("cool");
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, 15000);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, 15000);
+    }
   }
   getProjectDataFromLocalStorage() {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let tempProjectData = _project_project__WEBPACK_IMPORTED_MODULE_18__.ProjectUtils.readProjectData(_this.userService.getItem('project'));
       if (tempProjectData !== undefined) {
         let project = new _project_project__WEBPACK_IMPORTED_MODULE_18__.Project();
@@ -1633,6 +1635,7 @@ class AdminComponent {
     });
   }
   showBrowserSessionTimeoutDialog(content) {
+    console.log("showBrowserSessionTimeoutDialog");
     this.browserSessionTimeoutDialogRef = this.dialog.open(_browser_session_timeout_dialog_browser_session_timeout_dialog_component__WEBPACK_IMPORTED_MODULE_29__.BrowserSessionTimeoutDialogComponent, {
       disableClose: true,
       panelClass: 'browser-session-timeout-dialog',
@@ -1707,7 +1710,7 @@ class AdminComponent {
   }
   importSetting(fileChangeEvent, options) {
     var _this2 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const file = fileChangeEvent.target.files[0];
       let fileReader = new FileReader();
       let updateTime = yield _this2.sharedService.getUpdateTime();
@@ -2052,7 +2055,7 @@ class AdminComponent {
   }
   _getUserInfo() {
     var _this3 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let userInfo = _this3.userService.getUserInfo();
       _this3.username = userInfo.name;
       _this3.isAdmin = userInfo.level == 2;
@@ -2166,7 +2169,7 @@ class AdminComponent {
   //for testing purpose
   getSystemListResponse() {
     var _this4 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let updateTime = yield _this4.sharedService.getUpdateTime();
       let message = {
         type: 'system_List_Result',
@@ -74435,7 +74438,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "LogType": () => (/* binding */ LogType),
 /* harmony export */   "SystemName": () => (/* binding */ SystemName)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/table */ 85288);
 /* harmony import */ var src_app_device_log_content__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/device-log-content */ 95267);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/forms */ 2508);
@@ -75572,7 +75575,7 @@ class FilterDeviceLogComponent {
   }
   resetForm(isResetBtnClicked) {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this.systems = [];
       _this.regFloors = [];
       _this.floors = [];
@@ -75811,7 +75814,7 @@ class FilterDeviceLogComponent {
         //wait for a second
       }
     }, 1000);
-    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       //call when user clicked refresh
       if (!src_app_app_component__WEBPACK_IMPORTED_MODULE_6__.AppComponent.isCallingOnClose) {
         console.log("Message onclose (filter)");
@@ -78113,7 +78116,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ViewDownloadReportComponent": () => (/* binding */ ViewDownloadReportComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var src_app_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/constants */ 4854);
 /* harmony import */ var src_app_file__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/file */ 20302);
 /* harmony import */ var src_app_service_websocket_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/service/websocket.service */ 99825);
@@ -78465,7 +78468,7 @@ class ViewDownloadReportComponent {
         //wait for a second
       }
     }, 1000);
-    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    window.addEventListener('beforeunload', /*#__PURE__*/(0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       //call when user clicked refresh
       if (!src_app_app_component__WEBPACK_IMPORTED_MODULE_6__.AppComponent.isCallingOnClose) {
         console.log("Message onClose (reports)");
@@ -78906,7 +78909,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ChangeProjectComponent": () => (/* binding */ ChangeProjectComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/forms */ 2508);
 /* harmony import */ var src_app_convert_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/convert-utils */ 81102);
 /* harmony import */ var _add_project_submit_dialog_add_project_submit_dialog_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../add-project-submit-dialog/add-project-submit-dialog.component */ 50438);
@@ -79384,27 +79387,25 @@ class ChangeProjectComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, src_app_constants__WEBPACK_IMPORTED_MODULE_6__.Constants.responseTimeout);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, src_app_constants__WEBPACK_IMPORTED_MODULE_6__.Constants.responseTimeout);
+    }
   }
   sendPLCPointReorderRequest() {
     this.WebSocketService.messages.next({
@@ -79513,7 +79514,7 @@ class ChangeProjectComponent {
   }
   submitForm() {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // console.log(this.myForm.get('nameEN')?.value);
       // console.log(this.myForm.get('nameTC')?.value);
       // console.log(this.myForm.get('nameSC')?.value);
@@ -81465,14 +81466,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SharedService": () => (/* binding */ SharedService)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 23280);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 78611);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 22560);
 /* harmony import */ var _websocket_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./websocket.service */ 99825);
 /* harmony import */ var _user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./user.service */ 84981);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 58987);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 60124);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ 58987);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 60124);
 
 var _class;
 
@@ -81560,20 +81560,19 @@ class SharedService {
      await this.sharedService.getUpdateTime()
   **/
   getUpdateTime() {
-    var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       //Get Time API
-      const requesturl = 'https://worldtimeapi.org/api/timezone/Asia/Hong_Kong';
-      const response = _this.httpClient.get(requesturl);
-      let data = yield (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.lastValueFrom)(response);
-      if (data !== undefined) {
-        let millisec = parseInt(data['datetime'].split(".", 2)[1].slice(0, 3));
-        console.log("update time in ms: ", data['unixtime'] * 1000 + millisec);
-        return data['unixtime'] * 1000 + millisec;
-      } else {
-        console.log("update time in ms (used local): ", Date.now());
-        return Date.now();
-      }
+      // const requesturl = 'https://worldtimeapi.org/api/timezone/Asia/Hong_Kong';
+      // const response = this.httpClient.get(requesturl);
+      // let data = await lastValueFrom(response);
+      // if (data !== undefined) {
+      //   let millisec = parseInt(data['datetime'].split(".",2)[1].slice(0,3));
+      //   console.log("update time in ms: ", data['unixtime'] * 1000 + millisec);
+      //   return (data['unixtime'] * 1000 + millisec);
+      // } else {
+      console.log("update time in ms (used local): ", Date.now());
+      return Date.now();
+      // }
     })();
   }
   // Restricts input for the given textbox to the given inputFilter.
@@ -81639,9 +81638,9 @@ class SharedService {
 }
 _class = SharedService;
 _class.ɵfac = function SharedService_Factory(t) {
-  return new (t || _class)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_websocket_service__WEBPACK_IMPORTED_MODULE_1__.WebsocketService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_user_service__WEBPACK_IMPORTED_MODULE_2__.UserService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router));
+  return new (t || _class)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_websocket_service__WEBPACK_IMPORTED_MODULE_1__.WebsocketService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_user_service__WEBPACK_IMPORTED_MODULE_2__.UserService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__.Router));
 };
-_class.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjectable"]({
+_class.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjectable"]({
   token: _class,
   factory: _class.ɵfac,
   providedIn: 'root'
@@ -82349,7 +82348,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AddEquipmentComponent": () => (/* binding */ AddEquipmentComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @angular/forms */ 2508);
 /* harmony import */ var _add_equipment_submit_dialog_add_equipment_submit_dialog_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add-equipment-submit-dialog/add-equipment-submit-dialog.component */ 26334);
 /* harmony import */ var src_app_convert_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/convert-utils */ 81102);
@@ -82993,7 +82992,7 @@ class AddEquipmentComponent {
   }
   getSystemListResponse() {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let message = {
         type: 'system_List_Result',
         content: {
@@ -83199,27 +83198,25 @@ class AddEquipmentComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, src_app_constants__WEBPACK_IMPORTED_MODULE_19__.Constants.responseTimeout);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, src_app_constants__WEBPACK_IMPORTED_MODULE_19__.Constants.responseTimeout);
+    }
   }
   ngOnDestroy() {
     if (this.responseTimer) {
@@ -83376,7 +83373,7 @@ class AddEquipmentComponent {
   }
   submitEquipment(options) {
     var _this2 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this2.saveEquipmentInputs();
       let message = {
         type: '',
@@ -83493,7 +83490,7 @@ class AddEquipmentComponent {
   }
   _sendSubmitEquipmentResponse(action) {
     var _this3 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let message = {
         type: '',
         content: {}
@@ -83736,7 +83733,7 @@ class AddEquipmentComponent {
   }
   removeEquipment(options) {
     var _this4 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let message = {
         type: '',
         content: {}
@@ -85282,7 +85279,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AddSystemComponent": () => (/* binding */ AddSystemComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _add_system_submit_dialog_add_system_submit_dialog_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add-system-submit-dialog/add-system-submit-dialog.component */ 27092);
 /* harmony import */ var _confirm_delete_system_dialog_confirm_delete_system_dialog_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../confirm-delete-system-dialog/confirm-delete-system-dialog.component */ 94344);
 /* harmony import */ var _system_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../system-utils */ 59565);
@@ -85740,27 +85737,25 @@ class AddSystemComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, src_app_constants__WEBPACK_IMPORTED_MODULE_14__.Constants.responseTimeout);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, src_app_constants__WEBPACK_IMPORTED_MODULE_14__.Constants.responseTimeout);
+    }
   }
   ngOnDestroy() {
     if (this.responseTimer) {
@@ -85936,7 +85931,7 @@ class AddSystemComponent {
   }
   _sendUpdateSystemResponse(action) {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let message = {
         type: '',
         content: {}
@@ -86006,7 +86001,7 @@ class AddSystemComponent {
   }
   submitForm() {
     var _this2 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       console.log(_this2.myForm.get('nameEN')?.value);
       console.log(_this2.myForm.get('nameTC')?.value);
       console.log(_this2.myForm.get('nameSC')?.value);
@@ -86118,7 +86113,7 @@ class AddSystemComponent {
   }
   removeSystem(options) {
     var _this3 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let message = {
         type: '',
         content: {}
@@ -86868,7 +86863,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "EquipmentListComponent": () => (/* binding */ EquipmentListComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 47727);
 /* harmony import */ var _equipment_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../equipment-utils */ 83093);
 /* harmony import */ var _add_equipment_add_equipment_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../add-equipment/add-equipment.component */ 16815);
@@ -87522,27 +87517,25 @@ class EquipmentListComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, src_app_constants__WEBPACK_IMPORTED_MODULE_7__.Constants.responseTimeout);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, src_app_constants__WEBPACK_IMPORTED_MODULE_7__.Constants.responseTimeout);
+    }
   }
   getSystemList() {
     this.websocketService.messages.next({
@@ -87558,7 +87551,7 @@ class EquipmentListComponent {
   }
   getSystemListResponse() {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let updateTime = yield _this.sharedService.getUpdateTime();
       let message = {
         type: 'system_List_Result',
@@ -87739,7 +87732,7 @@ class EquipmentListComponent {
   }
   sendEquipmentListOrdering(ordered) {
     var _this2 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let updateMessage = {
         type: '',
         content: {}
@@ -88476,7 +88469,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AddGroupFilterComponent": () => (/* binding */ AddGroupFilterComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/forms */ 2508);
 /* harmony import */ var src_app_convert_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/convert-utils */ 81102);
 /* harmony import */ var _confirm_delete_system_dialog_confirm_delete_system_dialog_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../confirm-delete-system-dialog/confirm-delete-system-dialog.component */ 94344);
@@ -88906,7 +88899,7 @@ class AddGroupFilterComponent {
   }
   getSystemListResponse() {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let updateTime = yield _this.sharedService.getUpdateTime();
       let message = {
         type: 'system_List_Result',
@@ -89028,27 +89021,25 @@ class AddGroupFilterComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, src_app_constants__WEBPACK_IMPORTED_MODULE_16__.Constants.responseTimeout);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, src_app_constants__WEBPACK_IMPORTED_MODULE_16__.Constants.responseTimeout);
+    }
   }
   ngOnDestroy() {
     if (this.responseTimer) {
@@ -89130,7 +89121,7 @@ class AddGroupFilterComponent {
   }
   submitGroupFilter(options) {
     var _this2 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let action;
       let message = {
         type: '',
@@ -89196,7 +89187,7 @@ class AddGroupFilterComponent {
   }
   _sendSubmitGroupFilterResponse(action, groupID) {
     var _this3 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let message = {
         type: '',
         content: {}
@@ -89247,7 +89238,7 @@ class AddGroupFilterComponent {
   }
   submitForm() {
     var _this4 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this4.updateTime = yield _this4.sharedService.getUpdateTime();
       //save group filter inputs
       console.log(_this4.myForm.get('nameEN')?.value);
@@ -89362,7 +89353,7 @@ class AddGroupFilterComponent {
   }
   removeGroupFilter(options) {
     var _this5 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this5.updateTime = yield _this5.sharedService.getUpdateTime();
       let message = {
         type: '',
@@ -89621,7 +89612,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "GroupFilterListComponent": () => (/* binding */ GroupFilterListComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 47727);
 /* harmony import */ var _add_group_filter_add_group_filter_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../add-group-filter/add-group-filter.component */ 47671);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/forms */ 2508);
@@ -89967,27 +89958,25 @@ class GroupFilterListComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, src_app_constants__WEBPACK_IMPORTED_MODULE_10__.Constants.responseTimeout);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, src_app_constants__WEBPACK_IMPORTED_MODULE_10__.Constants.responseTimeout);
+    }
   }
   showBrowserSessionTimeoutDialog(content) {
     this.browserSessionTimeoutDialogRef = this.dialog.open(src_app_browser_session_timeout_dialog_browser_session_timeout_dialog_component__WEBPACK_IMPORTED_MODULE_9__.BrowserSessionTimeoutDialogComponent, {
@@ -90078,7 +90067,7 @@ class GroupFilterListComponent {
   }
   getSystemListResponse() {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let message = {
         type: 'system_List_Result',
         content: {
@@ -90939,7 +90928,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SystemListComponent": () => (/* binding */ SystemListComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
+/* harmony import */ var _Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 71670);
 /* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/cdk/drag-drop */ 47727);
 /* harmony import */ var _add_system_add_system_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../add-system/add-system.component */ 95546);
 /* harmony import */ var _system_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../system-utils */ 59565);
@@ -91352,27 +91341,25 @@ class SystemListComponent {
     this.setResponseTimeout();
   }
   setResponseTimeout() {
-    if (this.isDev) {
-      //only applicable in production
-      return;
-    }
-    if (this.responseTimer != undefined) {
-      clearTimeout(this.responseTimer);
-    }
-    this.responseTimer = setTimeout(() => {
-      this.sharedService.cancelSchedule();
-      //close all dialogs first
-      if (this.dialog.openDialogs.length > 0) {
-        this.dialog.closeAll();
+    if (!this.isDev) {
+      if (this.responseTimer != undefined) {
+        clearTimeout(this.responseTimer);
       }
-      this.showBrowserSessionTimeoutDialog({
-        message: {
-          en: 'Bad network connection. Please login again.',
-          cn: '網路連線不良，請再次登入。',
-          sn: '網路連線不良，請再次登入。'
+      this.responseTimer = setTimeout(() => {
+        this.sharedService.cancelSchedule();
+        //close all dialogs first
+        if (this.dialog.openDialogs.length > 0) {
+          this.dialog.closeAll();
         }
-      });
-    }, src_app_constants__WEBPACK_IMPORTED_MODULE_6__.Constants.responseTimeout);
+        this.showBrowserSessionTimeoutDialog({
+          message: {
+            en: 'Bad network connection. Please login again.',
+            cn: '網路連線不良，請再次登入。',
+            sn: '網路連線不良，請再次登入。'
+          }
+        });
+      }, src_app_constants__WEBPACK_IMPORTED_MODULE_6__.Constants.responseTimeout);
+    }
   }
   showConfirmDialog() {
     this.dialogRef = this.dialog.open(_confirm_replace_dialog_confirm_replace_dialog_component__WEBPACK_IMPORTED_MODULE_7__.ConfirmReplaceDialogComponent, {
@@ -91401,7 +91388,7 @@ class SystemListComponent {
   }
   getSystemListResponse() {
     var _this = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let updateTime = yield _this.sharedService.getUpdateTime();
       let message = {
         type: 'system_List_Result',
@@ -91437,7 +91424,7 @@ class SystemListComponent {
   }
   sendUpdateSystemListOrdering() {
     var _this2 = this;
-    return (0,_Users_derekchiu_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_derekchiu_angular_projects_bsm_setting_web_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this2.updateTime = yield _this2.sharedService.getUpdateTime();
       let updateMessage = {
         type: '',
